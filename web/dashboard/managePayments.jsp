@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
-    <link href="css/dashboard/manaPayments.css" rel="stylesheet" />
+    <link href="../css/dashboard/manaPayments.css" rel="stylesheet" />
     
   </head>
   <body>
@@ -18,8 +18,21 @@
         <%@ include file="sidebar.jsp" %>
         <div class="main-content">
           <div class="content-wrapper">
-            <!-- Include Header -->
-            <%@ include file="header.jsp" %>
+            <div class="header">
+              <h2 class="header-title">Quản Lý Tài Khoản</h2>
+              <div class="header-actions">
+                <div class="user-profile">
+                  <img src="img/dashborad/defaultLogoAdmin.png" alt="Ảnh Đại Diện Quản Trị" class="avatar" />
+                  <div class="user-info">
+                    <span class="user-name">Xin Chào, Quản Trị</span>
+                    <a href="/LogoutServlet" class="logout-btn">
+                      <i class="fas fa-sign-out-alt"></i>
+                      Đăng Xuất
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- Filter Section -->
             <div class="filter-section">
               <div class="filter-row">
@@ -292,7 +305,7 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/dashboard/manaPayments.js"></script>
+    <script src="../js/dashboard/manaPayments.js"></script>
 
   </body>
 </html>

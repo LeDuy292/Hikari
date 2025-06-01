@@ -190,7 +190,7 @@
 <div class="sidebar">
   <div class="sidebar-top">
     <div class="sidebar-header">
-      <img src="img/dashborad/logo.png" alt="Logo HIKARI" class="sidebar-logo" />
+      <img src="../img/dashborad/logo.png" alt="Logo HIKARI" class="sidebar-logo" />
       <div class="sidebar-title-container">
         <span class="sidebar-title">HIKARI</span>
         <span class="sidebar-subtitle">Japanese</span>
@@ -222,7 +222,7 @@
     </a>
   </div>
   <div class="sidebar-bottom">
-    <img src="img/dashborad/learning.jpg" alt="Sidebar Image" class="sidebar-image" />
+    <img src="../img/dashborad/learning.jpg" alt="Sidebar Image" class="sidebar-image" />
     <a href="manageMessages.jsp" class="sidebar-message-link <%= currentPage.equals("manageMessages.jsp") ? "active" : "" %>">
       <i class="fas fa-envelope"></i>
       <span>Nhắn Tin</span>

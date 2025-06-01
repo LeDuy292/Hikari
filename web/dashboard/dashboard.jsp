@@ -14,7 +14,7 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Custom CSS -->
-    <link href="css/dashboard/mainDashboard.css" rel="stylesheet" />
+    <link href="../css/dashboard/mainDashboard.css" rel="stylesheet" />
 
   </head>
   <body>
@@ -25,10 +25,22 @@
         <!-- Main Content -->
         <div class="main-content">
           <div class="content-wrapper">
-            <!-- Include Header -->
-            <%@ include file="header.jsp" %>
- 
-
+              <div class="header">
+                <h2 class="header-title">Dashboard</h2>
+                <div class="header-actions">
+                <div class="user-profile">
+                    <img src="../img/dashborad/defaultAvatar.jpg" alt="Ảnh Đại Diện Quản Trị" class="avatar" />
+                <div class="user-info">
+                <span class="user-name">Xin Chào, Quản Trị</span>
+                    <a href="/LogoutServlet" class="logout-btn">
+                     <i class="fas fa-sign-out-alt"></i>
+                    Đăng Xuất
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+              
             <!-- Statistics Cards -->
             <div class="row mb-4">
               <div class="col-md-3">
@@ -111,7 +123,7 @@
               <div class="course-grid">
                 <!-- Course Card 1 -->
                 <div class="course-card" data-id="CRS001">
-                  <img src="img/courses/Japanese-N1.jpg" alt="Tiếng Nhật N1" />
+                  <img src="../img/courses/Japanese-N1.jpg" alt="Tiếng Nhật N1" />
                   <div class="course-info">
                     <h6>Tiếng Nhật N1</h6>
                     <p><strong>Giảng viên:</strong> Nguyễn Văn A</p>
@@ -122,7 +134,7 @@
                 </div>
                 <!-- Course Card 2 -->
                 <div class="course-card" data-id="CRS002">
-                  <img src="img/courses/Japanese-N2.png" alt="Tiếng Nhật N2" />
+                  <img src="../img/courses/Japanese-N2.png" alt="Tiếng Nhật N2" />
                   <div class="course-info">
                     <h6>Tiếng Nhật N2</h6>
                     <p><strong>Giảng viên:</strong> Trần Thị B</p>
@@ -133,7 +145,7 @@
                 </div>
                 <!-- Course Card 3 -->
                 <div class="course-card" data-id="CRS003">
-                  <img src="img/courses/Japanese-N3.png" alt="Tiếng Nhật N3" />
+                  <img src="../img/courses/Japanese-N3.png" alt="Tiếng Nhật N3" />
                   <div class="course-info">
                     <h6>Tiếng Nhật N3</h6>
                     <p><strong>Giảng viên:</strong> Lê Văn C</p>
@@ -144,7 +156,7 @@
                 </div>
                 <!-- Course Card 4 -->
                 <div class="course-card" data-id="CRS004">
-                  <img src="img/courses/Japanese-N4.jpg" alt="Tiếng Nhật N4" />
+                  <img src="../img/courses/Japanese-N4.jpg" alt="Tiếng Nhật N4" />
                   <div class="course-info">
                     <h6>Tiếng Nhật N4</h6>
                     <p><strong>Giảng viên:</strong> Phạm Thị D</p>
@@ -155,7 +167,7 @@
                 </div>
                 <!-- Course Card 5 -->
                 <div class="course-card" data-id="CRS005">
-                  <img src="img/courses/Japanese-N5.jpg" alt="Tiếng Nhật N5" />
+                  <img src="../img/courses/Japanese-N5.jpg" alt="Tiếng Nhật N5" />
                   <div class="course-info">
                     <h6>Tiếng Nhật N5</h6>
                     <p><strong>Giảng viên:</strong> Hoàng Văn E</p>
@@ -174,6 +186,6 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Chart.js Initialization -->
-    <script src="js/dashboard/mainDashboard.js"></script>
+    <script src="../js/dashboard/mainDashboard.js"></script>
   </body>
 </html>

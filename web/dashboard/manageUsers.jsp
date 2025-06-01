@@ -8,19 +8,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
-
-    <link href="css/dashboard/manaUser.css" rel="stylesheet" />
-
+    <link href="../css/dashboard/manaUser.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <!-- Include Sidebar -->
         <%@ include file="sidebar.jsp" %>
         <div class="main-content">
           <div class="content-wrapper">
-            <!-- Include Header -->
-            <%@ include file="header.jsp" %>
+            <div class="header">
+              <h2 class="header-title">Quản Lý Tài Khoản</h2>
+              <div class="header-actions">
+                <button class="btn-add-user" data-bs-toggle="modal" data-bs-target="#addUserModal">
+                  <i class="fas fa-plus"></i> Thêm
+                </button>
+                <div class="notification">
+                  <button class="btn-notification" data-bs-toggle="modal" data-bs-target="#notificationModal">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-count" id="notificationCount">2</span>
+                  </button>
+                </div>
+                <div class="user-profile">
+                  <img src="img/dashborad/defaultLogoAdmin.png" alt="Ảnh Đại Diện Quản Trị" class="avatar" />
+                  <div class="user-info">
+                    <span class="user-name">Xin Chào, Quản Trị</span>
+                    <a href="/LogoutServlet" class="logout-btn">
+                      <i class="fas fa-sign-out-alt"></i>
+                      Đăng Xuất
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- Filter Section -->
             <div class="filter-section">
               <label for="roleFilter">Vai Trò:</label>
@@ -79,10 +98,11 @@
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editUserModal" 
                               data-user-id="USR001" data-full-name="Nguyễn Văn A" data-username="nguyenvana" 
                               data-email="nguyenvana@example.com" data-role="Học Viên" data-status="Hoạt Động"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteUserModal" 
-                              data-user-id="USR001" data-full-name="Nguyễn Văn A"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockUserModal" 
+                              data-user-id="USR001" data-full-name="Nguyễn Văn A" data-status="Hoạt Động"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
+                  <!-- Repeat similar updates for other table rows -->
                   <tr>
                     <td>USR002</td>
                     <td><img src="img/dashborad/defaultAvatar.jpg" alt="Avatar" /></td>
@@ -101,8 +121,8 @@
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editUserModal" 
                               data-user-id="USR002" data-full-name="Trần Thị B" data-username="tranb" 
                               data-email="tranb@example.com" data-role="Giảng Viên" data-status="Hoạt Động"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteUserModal" 
-                              data-user-id="USR002" data-full-name="Trần Thị B"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockUserModal" 
+                              data-user-id="USR002" data-full-name="Trần Thị B" data-status="Hoạt Động"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -123,10 +143,11 @@
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editUserModal" 
                               data-user-id="USR003" data-full-name="Lê Văn C" data-username="levanc" 
                               data-email="levanc@example.com" data-role="Học Viên" data-status="Khóa"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteUserModal" 
-                              data-user-id="USR003" data-full-name="Lê Văn C"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockUserModal" 
+                              data-user-id="USR003" data-full-name="Lê Văn C" data-status="Khóa"><i class="fas fa-unlock"></i></button>
                     </td>
                   </tr>
+                  <!-- Add similar updates for remaining rows -->
                   <tr>
                     <td>USR004</td>
                     <td><img src="img/dashborad/defaultAvatar.jpg" alt="Avatar" /></td>
@@ -145,8 +166,8 @@
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editUserModal" 
                               data-user-id="USR004" data-full-name="Phạm Thị D" data-username="phamd" 
                               data-email="phamd@example.com" data-role="Quản Trị" data-status="Hoạt Động"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteUserModal" 
-                              data-user-id="USR004" data-full-name="Phạm Thị D"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockUserModal" 
+                              data-user-id="USR004" data-full-name="Phạm Thị D" data-status="Hoạt Động"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -167,8 +188,8 @@
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editUserModal" 
                               data-user-id="USR005" data-full-name="Hoàng Văn E" data-username="hoange" 
                               data-email="hoange@example.com" data-role="Học Viên" data-status="Hoạt Động"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteUserModal" 
-                              data-user-id="USR005" data-full-name="Hoàng Văn E"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockUserModal" 
+                              data-user-id="USR005" data-full-name="Hoàng Văn E" data-status="Hoạt Động"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -189,8 +210,8 @@
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editUserModal" 
                               data-user-id="USR006" data-full-name="Đỗ Thị F" data-username="dof1" 
                               data-email="dof1@example.com" data-role="Giảng Viên" data-status="Khóa"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteUserModal" 
-                              data-user-id="USR006" data-full-name="Đỗ Thị F"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockUserModal" 
+                              data-user-id="USR006" data-full-name="Đỗ Thị F" data-status="Khóa"><i class="fas fa-unlock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -211,8 +232,9 @@
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editUserModal" 
                               data-user-id="USR007" data-full-name="Ngô Văn G" data-username="ngog" 
                               data-email="ngog@example.com" data-role="Học Viên" data-status="Hoạt Động"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteUserModal" 
-                              data-user-id="USR007" data-full-name="Ngô Văn G"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockUserModal" 
+                              data-user-id="USR007" data-full-name="Ngô Văn G" data-status="Hoạt Động"><i class="fas fa-lock"></i></button>
+                        
                     </td>
                   </tr>
                   <tr>
@@ -233,8 +255,8 @@
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editUserModal" 
                               data-user-id="USR008" data-full-name="Vũ Thị H" data-username="vuh" 
                               data-email="vuh@example.com" data-role="Giảng Viên" data-status="Hoạt Động"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteUserModal" 
-                              data-user-id="USR008" data-full-name="Vũ Thị H"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockUserModal" 
+                              data-user-id="USR008" data-full-name="Vũ Thị H" data-status="Hoạt Động"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -255,8 +277,8 @@
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editUserModal" 
                               data-user-id="USR009" data-full-name="Bùi Văn I" data-username="buii" 
                               data-email="buii@example.com" data-role="Học Viên" data-status="Khóa"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteUserModal" 
-                              data-user-id="USR009" data-full-name="Bùi Văn I"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockUserModal" 
+                              data-user-id="USR009" data-full-name="Bùi Văn I" data-status="Khóa"><i class="fas fa-unlock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -277,8 +299,8 @@
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editUserModal" 
                               data-user-id="USR010" data-full-name="Lý Thị K" data-username="lyk" 
                               data-email="lyk@example.com" data-role="Quản Trị" data-status="Hoạt Động"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteUserModal" 
-                              data-user-id="USR010" data-full-name="Lý Thị K"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockUserModal" 
+                              data-user-id="USR010" data-full-name="Lý Thị K" data-status="Hoạt Động"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                 </tbody>
@@ -461,31 +483,74 @@
                 </div>
               </div>
             </div>
-            <!-- Delete User Modal -->
-            <div class="modal fade delete-user-modal" id="deleteUserModal" tabindex="-1" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
+            <!-- Block User Modal -->
+            <div class="modal fade block-user-modal" id="blockUserModal" tabindex="-1" aria-labelledby="blockUserModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="deleteUserModalLabel"><i class="fas fa-trash-alt"></i> Xác Nhận Xóa Tài Khoản</h5>
+                    <h5 class="modal-title" id="blockUserModalLabel"><i class="fas fa-lock"></i> Xác Nhận Khóa/Mở Khóa Tài Khoản</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <div class="warning-section">
                       <h6 class="warning-title"><i class="fas fa-exclamation-triangle"></i> Cảnh Báo</h6>
                       <div class="info-item">
-                        Bạn có chắc chắn muốn xóa tài khoản <span id="deleteFullName"></span> (ID: <span id="deleteUserId"></span>)?
+                        Bạn có chắc chắn muốn <span id="blockAction"></span> tài khoản <span id="blockFullName"></span> (ID: <span id="blockUserId"></span>)?
                       </div>
                       <div class="warning-text">
-                        Hành động này không thể hoàn tác. Vui lòng xác nhận.
+                        Hành động này sẽ thay đổi trạng thái tài khoản. Vui lòng xác nhận.
                       </div>
                     </div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Hủy</button>
-                    <form action="/DeleteUserServlet" method="POST">
-                      <input type="hidden" id="deleteUserIdInput" name="userId" />
-                      <button type="submit" class="btn btn-confirm-delete">Xóa</button>
+                    <form action="/BlockUserServlet" method="POST">
+                      <input type="hidden" id="blockUserIdInput" name="userId" />
+                      <input type="hidden" id="blockStatusInput" name="status" />
+                      <button type="submit" class="btn btn-confirm-block">Xác Nhận</button>
                     </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Notification Modal -->
+            <div class="modal fade notification-modal" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="notificationModalLabel"><i class="fas fa-bell"></i> Thông Báo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="notification-list">
+                      <div class="notification-item">
+                        <h6 class="notification-title">Yêu cầu tạo tài khoản Giảng Viên</h6>
+                        <p><strong>Tên:</strong> Nguyễn Văn X</p>
+                        <p><strong>Email:</strong> nguyenx@example.com</p>
+                        <p><strong>Coordinator:</strong> Trần Thị Y</p>
+                        <p><strong>Đánh giá:</strong> Đạt yêu cầu làm Giảng Viên</p>
+                        <p><strong>Hồ sơ (CV):</strong> <a href="/path/to/cv1.pdf" target="_blank">Xem CV</a></p>
+                        <div class="notification-actions">
+                          <button class="btn btn-approve" data-notification-id="NOT001">Phê duyệt</button>
+                          <button class="btn btn-reject" data-notification-id="NOT001">Từ chối</button>
+                        </div>
+                      </div>
+                      <div class="notification-item">
+                        <h6 class="notification-title">Yêu cầu tạo tài khoản Giảng Viên</h6>
+                        <p><strong>Tên:</strong> Lê Thị Z</p>
+                        <p><strong>Email:</strong> lez@example.com</p>
+                        <p><strong>Coordinator:</strong> Phạm Văn W</p>
+                        <p><strong>Đánh giá:</strong> Đạt yêu cầu làm Giảng Viên</p>
+                        <p><strong>Hồ sơ (CV):</strong> <a href="/path/to/cv2.pdf" target="_blank">Xem CV</a></p>
+                        <div class="notification-actions">
+                          <button class="btn btn-approve" data-notification-id="NOT002">Phê duyệt</button>
+                          <button class="btn btn-reject" data-notification-id="NOT002">Từ chối</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Đóng</button>
                   </div>
                 </div>
               </div>
@@ -495,7 +560,6 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="js/dashboard/manaUser.js"></script>
-
+    <script src="../js/dashboard/manaUser.js"></script>
   </body>
 </html>

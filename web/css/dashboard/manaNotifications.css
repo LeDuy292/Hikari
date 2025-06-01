@@ -112,6 +112,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
       tbody .btn-view { background-color: #4a90e2; border: none; padding: 5px 10px; border-radius: 5px; }
       tbody .btn-edit { background-color: #f39c12; border: none; padding: 5px 10px; border-radius: 5px; }
       tbody .btn-delete { background-color: #e74c3c; border: none; padding: 5px 10px; border-radius: 5px; }
+      tbody .btn-block { background-color: #e74c3c; border: none; padding: 5px 10px; border-radius: 5px; }
       tbody .btn-add { background-color: #28a745; border: none; padding: 8px 16px; border-radius: 8px; color: var(--text-color); font-weight: 500; transition: transform 0.2s, background 0.2s; }
       tbody .btn-add:hover { background-color: #218838; transform: translateY(-2px); }
       .header-actions .btn-add { background-color: #28a745; border: none; padding: 8px 16px; border-radius: 8px; color: var(--text-color); font-weight: 500; transition: transform 0.2s, background 0.2s; }

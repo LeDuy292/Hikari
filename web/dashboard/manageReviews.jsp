@@ -8,19 +8,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
-    <link href="css/dashboard/manaReviews.css" rel="stylesheet" />
-   
+    <link href="../css/dashboard/manaReviews.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
         <!-- Include Sidebar -->
-        <%@ include file="sidebar.jsp" %><
+        <%@ include file="sidebar.jsp" %>
         <div class="main-content">
           <div class="content-wrapper">
             <!-- Include Header -->
-            <%@ include file="header.jsp" %>
-            <!-- Filter Section -->
+            <div class="header">
+              <h2 class="header-title">Quản Lý Đánh Giá</h2>
+              <div class="header-actions">
+                <div class="user-profile">
+                  <img src="../img/dashborad/defaultAvatar.jpg" alt="Ảnh Đại Diện Quản Trị" class="avatar" />
+                  <div class="user-info">
+                    <span class="user-name">Xin Chào, Quản Trị</span>
+                    <a href="/LogoutServlet" class="logout-btn">
+                      <i class="fas fa-sign-out-alt"></i>
+                      Đăng Xuất
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="filter-section">
               <div class="filter-row">
                 <label for="reviewerFilter">Người Đánh Giá:</label>
@@ -95,7 +107,7 @@
                     <td>
                       <button class="btn btn-view btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#viewReviewModal" data-review-id="REV001"><i class="fas fa-eye"></i></button>
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editReviewModal" data-review-id="REV001"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteReviewModal" data-review-id="REV001" data-reviewer="Nguyễn Văn A"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockReviewModal" data-review-id="REV001" data-reviewer="Nguyễn Văn A"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr data-review-id="REV002">
@@ -109,7 +121,7 @@
                     <td>
                       <button class="btn btn-view btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#viewReviewModal" data-review-id="REV002"><i class="fas fa-eye"></i></button>
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editReviewModal" data-review-id="REV002"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteReviewModal" data-review-id="REV002" data-reviewer="Lê Văn C"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockReviewModal" data-review-id="REV002" data-reviewer="Lê Văn C"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr data-review-id="REV003">
@@ -123,7 +135,7 @@
                     <td>
                       <button class="btn btn-view btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#viewReviewModal" data-review-id="REV003"><i class="fas fa-eye"></i></button>
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editReviewModal" data-review-id="REV003"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteReviewModal" data-review-id="REV003" data-reviewer="Hoàng Văn E"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockReviewModal" data-review-id="REV003" data-reviewer="Hoàng Văn E"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr data-review-id="REV004">
@@ -137,7 +149,7 @@
                     <td>
                       <button class="btn btn-view btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#viewReviewModal" data-review-id="REV004"><i class="fas fa-eye"></i></button>
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editReviewModal" data-review-id="REV004"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteReviewModal" data-review-id="REV004" data-reviewer="Nguyễn Văn A"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockReviewModal" data-review-id="REV004" data-reviewer="Nguyễn Văn A"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr data-review-id="REV005">
@@ -151,7 +163,7 @@
                     <td>
                       <button class="btn btn-view btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#viewReviewModal" data-review-id="REV005"><i class="fas fa-eye"></i></button>
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editReviewModal" data-review-id="REV005"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteReviewModal" data-review-id="REV005" data-reviewer="Lê Văn C"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockReviewModal" data-review-id="REV005" data-reviewer="Lê Văn C"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr data-review-id="REV006">
@@ -165,7 +177,7 @@
                     <td>
                       <button class="btn btn-view btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#viewReviewModal" data-review-id="REV006"><i class="fas fa-eye"></i></button>
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editReviewModal" data-review-id="REV006"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteReviewModal" data-review-id="REV006" data-reviewer="Hoàng Văn E"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockReviewModal" data-review-id="REV006" data-reviewer="Hoàng Văn E"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr data-review-id="REV007">
@@ -179,7 +191,7 @@
                     <td>
                       <button class="btn btn-view btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#viewReviewModal" data-review-id="REV007"><i class="fas fa-eye"></i></button>
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editReviewModal" data-review-id="REV007"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteReviewModal" data-review-id="REV007" data-reviewer="Nguyễn Văn A"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockReviewModal" data-review-id="REV007" data-reviewer="Nguyễn Văn A"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr data-review-id="REV008">
@@ -193,7 +205,7 @@
                     <td>
                       <button class="btn btn-view btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#viewReviewModal" data-review-id="REV008"><i class="fas fa-eye"></i></button>
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editReviewModal" data-review-id="REV008"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteReviewModal" data-review-id="REV008" data-reviewer="Lê Văn C"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockReviewModal" data-review-id="REV008" data-reviewer="Lê Văn C"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr data-review-id="REV009">
@@ -207,7 +219,7 @@
                     <td>
                       <button class="btn btn-view btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#viewReviewModal" data-review-id="REV009"><i class="fas fa-eye"></i></button>
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editReviewModal" data-review-id="REV009"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteReviewModal" data-review-id="REV009" data-reviewer="Hoàng Văn E"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockReviewModal" data-review-id="REV009" data-reviewer="Hoàng Văn E"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr data-review-id="REV010">
@@ -221,7 +233,7 @@
                     <td>
                       <button class="btn btn-view btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#viewReviewModal" data-review-id="REV010"><i class="fas fa-eye"></i></button>
                       <button class="btn btn-edit btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#editReviewModal" data-review-id="REV010"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteReviewModal" data-review-id="REV010" data-reviewer="Nguyễn Văn A"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockReviewModal" data-review-id="REV010" data-reviewer="Nguyễn Văn A"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                 </tbody>
@@ -434,30 +446,30 @@
                 </div>
               </div>
             </div>
-            <!-- Delete Review Modal -->
-            <div class="modal fade delete-review-modal" id="deleteReviewModal" tabindex="-1" aria-labelledby="deleteReviewModalLabel" aria-hidden="true">
+            <!-- Block Review Modal -->
+            <div class="modal fade block-review-modal" id="blockReviewModal" tabindex="-1" aria-labelledby="blockReviewModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="deleteReviewModalLabel"><i class="fas fa-trash-alt"></i> Xác Nhận Xóa Đánh Giá</h5>
+                    <h5 class="modal-title" id="blockReviewModalLabel"><i class="fas fa-lock"></i> Xác Nhận Khóa Đánh Giá</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <div class="warning-section">
                       <h6 class="warning-title"><i class="fas fa-exclamation-triangle"></i> Cảnh Báo</h6>
                       <div class="info-item">
-                        Bạn có chắc chắn muốn xóa đánh giá <span id="deleteReviewId"></span> của <span id="deleteReviewer"></span>?
+                        Bạn có chắc chắn muốn khóa đánh giá <span id="blockReviewId"></span> của <span id="blockReviewer"></span>?
                       </div>
                       <div class="warning-text">
-                        Hành động này không thể hoàn tác. Vui lòng xác nhận.
+                        Hành động này sẽ tạm thời vô hiệu hóa đánh giá. Vui lòng xác nhận.
                       </div>
                     </div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Hủy</button>
-                    <form action="/DeleteReviewServlet" method="POST">
-                      <input type="hidden" id="deleteReviewIdInput" name="reviewId" />
-                      <button type="submit" class="btn btn-confirm-delete">Xóa</button>
+                    <form action="/BlockReviewServlet" method="POST">
+                      <input type="hidden" id="blockReviewIdInput" name="reviewId" />
+                      <button type="submit" class="btn btn-confirm-block">Khóa</button>
                     </form>
                   </div>
                 </div>
@@ -468,6 +480,6 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/dashboard/manaReviews.js"></script>
+    <script src="../js/dashboard/manaReviews.js"></script>
   </body>
 </html>

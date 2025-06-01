@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
-    <link href="css/dashboard/manaCourses.css" rel="stylesheet" />
+    <link href="../css/dashboard/manaCourses.css" rel="stylesheet" />
   </head>
   <body>
       
@@ -19,8 +19,22 @@
         <div class="main-content">
           <div class="content-wrapper">
             <!-- Include Header -->
-            <%@ include file="header.jsp" %>
-            <!-- Filter Section -->
+            
+            <div class="header">
+              <h2 class="header-title">Quản Lý Khóa Học</h2>
+              <div class="header-actions">
+                <div class="user-profile">
+                  <img src="img/dashborad/defaultLogoAdmin.png" alt="Ảnh Đại Diện Quản Trị" class="avatar" />
+                  <div class="user-info">
+                    <span class="user-name">Xin Chào, Quản Trị</span>
+                    <a href="/LogoutServlet" class="logout-btn">
+                      <i class="fas fa-sign-out-alt"></i>
+                      Đăng Xuất
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="filter-section">
               <label for="teacherFilter">Giáo Viên:</label>
               <select class="form-select" id="teacherFilter">
@@ -42,7 +56,7 @@
                 <option value="Hoạt Động">Hoạt Động</option>
                 <option value="Khóa">Khóa</option>
               </select>
-              <label for="createdDateFilter">Ngày Tạo:</label>
+              <label for="createdDateFilter">Created Date:</label>
               <input type="date" class="form-control" id="createdDateFilter" />
               <label for="nameSearch">Tìm Kiếm:</label>
               <input type="text" class="form-control" id="nameSearch" placeholder="Tìm theo tên khóa học..." />
@@ -84,8 +98,8 @@
                               data-level="Sơ Cấp" data-status="Hoạt Động" data-discount-code="N5DISC10" 
                               data-discount-percent="10" data-description="Khóa học nhập môn tiếng Nhật N5" 
                               data-duration="3 tháng" data-price="3000000"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteCourseModal" 
-                              data-course-id="CRS001" data-course-name="Tiếng Nhật Sơ Cấp N5"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockCourseModal" 
+                              data-course-id="CRS001" data-course-name="Tiếng Nhật Sơ Cấp N5"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -108,8 +122,8 @@
                               data-level="Trung Cấp" data-status="Hoạt Động" data-discount-code="" data-discount-percent="0" 
                               data-description="Khóa học tiếng Nhật trình độ trung cấp N3" data-duration="4 tháng" 
                               data-price="4500000"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteCourseModal" 
-                              data-course-id="CRS002" data-course-name="Tiếng Nhật Trung Cấp N3"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockCourseModal" 
+                              data-course-id="CRS002" data-course-name="Tiếng Nhật Trung Cấp N3"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -132,8 +146,8 @@
                               data-level="Cao Cấp" data-status="Khóa" data-discount-code="N1DISC20" data-discount-percent="20" 
                               data-description="Khóa học tiếng Nhật trình độ cao cấp N1" data-duration="6 tháng" 
                               data-price="6000000"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteCourseModal" 
-                              data-course-id="CRS003" data-course-name="Tiếng Nhật Cao Cấp N1"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockCourseModal" 
+                              data-course-id="CRS003" data-course-name="Tiếng Nhật Cao Cấp N1"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -155,8 +169,8 @@
                               data-course-id="CRS004" data-course-name="Kanji Sơ Cấp" data-teacher="Trần Thị B" 
                               data-level="Sơ Cấp" data-status="Hoạt Động" data-discount-code="" data-discount-percent="0" 
                               data-description="Khóa học Kanji cơ bản" data-duration="2 tháng" data-price="2000000"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteCourseModal" 
-                              data-course-id="CRS004" data-course-name="Kanji Sơ Cấp"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockCourseModal" 
+                              data-course-id="CRS004" data-course-name="Kanji Sơ Cấp"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -179,8 +193,8 @@
                               data-level="Trung Cấp" data-status="Hoạt Động" data-discount-code="N4DISC15" 
                               data-discount-percent="15" data-description="Khóa luyện thi JLPT N4" data-duration="3 tháng" 
                               data-price="3500000"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteCourseModal" 
-                              data-course-id="CRS005" data-course-name="Luyện Thi JLPT N4"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockCourseModal" 
+                              data-course-id="CRS005" data-course-name="Luyện Thi JLPT N4"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -202,8 +216,8 @@
                               data-course-id="CRS006" data-course-name="Hội Thoại Tiếng Nhật" data-teacher="Vũ Thị H" 
                               data-level="Trung Cấp" data-status="Khóa" data-discount-code="" data-discount-percent="0" 
                               data-description="Khóa học hội thoại thực hành" data-duration="2 tháng" data-price="2500000"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteCourseModal" 
-                              data-course-id="CRS006" data-course-name="Hội Thoại Tiếng Nhật"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockCourseModal" 
+                              data-course-id="CRS006" data-course-name="Hội Thoại Tiếng Nhật"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -226,8 +240,8 @@
                               data-level="Cao Cấp" data-status="Hoạt Động" data-discount-code="BIZDISC25" 
                               data-discount-percent="25" data-description="Khóa học tiếng Nhật cho doanh nghiệp" 
                               data-duration="5 tháng" data-price="5500000"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteCourseModal" 
-                              data-course-id="CRS007" data-course-name="Tiếng Nhật Doanh Nghiệp"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockCourseModal" 
+                              data-course-id="CRS007" data-course-name="Tiếng Nhật Doanh Nghiệp"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -249,8 +263,8 @@
                               data-course-id="CRS008" data-course-name="Ngữ Pháp N3" data-teacher="Đỗ Thị F" 
                               data-level="Trung Cấp" data-status="Hoạt Động" data-discount-code="" data-discount-percent="0" 
                               data-description="Khóa học ngữ pháp N3 chuyên sâu" data-duration="3 tháng" data-price="3200000"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteCourseModal" 
-                              data-course-id="CRS008" data-course-name="Ngữ Pháp N3"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockCourseModal" 
+                              data-course-id="CRS008" data-course-name="Ngữ Pháp N3"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -273,8 +287,8 @@
                               data-level="Cao Cấp" data-status="Khóa" data-discount-code="KANJIDISC30" 
                               data-discount-percent="30" data-description="Khóa học Kanji trình độ cao cấp" 
                               data-duration="4 tháng" data-price="5000000"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteCourseModal" 
-                              data-course-id="CRS009" data-course-name="Kanji Cao Cấp"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockCourseModal" 
+                              data-course-id="CRS009" data-course-name="Kanji Cao Cấp"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -296,8 +310,8 @@
                               data-course-id="CRS010" data-course-name="Luyện Thi JLPT N2" data-teacher="Trần Thị B" 
                               data-level="Cao Cấp" data-status="Hoạt Động" data-discount-code="" data-discount-percent="0" 
                               data-description="Khóa luyện thi JLPT N2" data-duration="5 tháng" data-price="5200000"><i class="fas fa-edit"></i></button>
-                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#deleteCourseModal" 
-                              data-course-id="CRS010" data-course-name="Luyện Thi JLPT N2"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-delete btn-sm btn-action" data-bs-toggle="modal" data-bs-target="#blockCourseModal" 
+                              data-course-id="CRS010" data-course-name="Luyện Thi JLPT N2"><i class="fas fa-lock"></i></button>
                     </td>
                   </tr>
                 </tbody>
@@ -539,30 +553,30 @@
                 </div>
               </div>
             </div>
-            <!-- Delete Course Confirmation Modal -->
-            <div class="modal fade delete-course-modal" id="deleteCourseModal" tabindex="-1" aria-labelledby="deleteCourseModalLabel" aria-hidden="true">
+            <!-- Block Course Confirmation Modal -->
+            <div class="modal fade block-course-modal" id="blockCourseModal" tabindex="-1" aria-labelledby="blockCourseModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="deleteCourseModalLabel"><i class="fas fa-trash-alt"></i> Xác Nhận Xóa Khóa Học</h5>
+                    <h5 class="modal-title" id="blockCourseModalLabel"><i class="fas fa-lock"></i> Xác Nhận Khóa Khóa Học</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <div class="warning-section">
                       <h6 class="warning-title"><i class="fas fa-exclamation-triangle"></i> Cảnh Báo</h6>
                       <div class="info-item">
-                        Bạn có chắc chắn muốn xóa khóa học <span id="deleteCourseName"></span> (ID: <span id="deleteCourseId"></span>)?
+                        Bạn có chắc chắn muốn khóa khóa học <span id="blockCourseName"></span> (ID: <span id="blockCourseId"></span>)?
                       </div>
                       <div class="warning-text">
-                        Hành động này không thể hoàn tác. Vui lòng xác nhận.
+                        Hành động này sẽ tạm thời vô hiệu hóa khóa học. Vui lòng xác nhận.
                       </div>
                     </div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Hủy</button>
-                    <form action="/DeleteCourseServlet" method="POST">
-                      <input type="hidden" id="deleteCourseIdInput" name="courseId" />
-                      <button type="submit" class="btn btn-confirm-delete">Xóa</button>
+                    <form action="/BlockCourseServlet" method="POST">
+                      <input type="hidden" id="blockCourseIdInput" name="courseId" />
+                      <button type="submit" class="btn btn-confirm-block">Khóa</button>
                     </form>
                   </div>
                 </div>
@@ -574,7 +588,7 @@
     </div>
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/dashboard/manaCourses.js"></script>
+    <script src="../js/dashboard/manaCourses.js"></script>
     
   </body>
 </html>
