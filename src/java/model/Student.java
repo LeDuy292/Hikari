@@ -5,6 +5,7 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.List;
 
 /**
  *
@@ -14,10 +15,10 @@ public class Student {
     private String studentID;
     private String userID;
     private LocalDate enrollmentDate;
-    private double progress;
+    private List progress;
     private String level;
 
-    public Student(String studentID, String userID, LocalDate enrollmentDate, double progress, String level) {
+  public Student(String studentID, String userID, LocalDate enrollmentDate, List progress, String level) {
         this.studentID = studentID;
         this.userID = userID;
         this.enrollmentDate = enrollmentDate;
@@ -49,11 +50,11 @@ public class Student {
         this.enrollmentDate = enrollmentDate;
     }
 
-    public double getProgress() {
+   public List getProgress() {
         return progress;
     }
 
-    public void setProgress(double progress) {
+    public void setProgress(List progress) {
         this.progress = progress;
     }
 
