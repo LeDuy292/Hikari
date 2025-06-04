@@ -1,4 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+    String uri = request.getRequestURI();
+    String pageTitle = "Trang";
+
+    if (uri.contains("class-management")) {
+        pageTitle = "Quản lý lớp học ";
+    } else if (uri.contains("course-approval")) {
+        pageTitle = "Phê duyệt khóa học ";
+    } else if (uri.contains("document-approval")) {
+        pageTitle = "Phê duyệt tài liệu  ";
+    } else if (uri.contains("home")) {
+        pageTitle = "Dashboard";
+    } else if (uri.contains("teacher-cv-review")) {
+        pageTitle = "Phê duyệt hồ sơ ";
+    } else if (uri.contains("test-approval")) {
+        pageTitle = "Phê duyệt bài test ";
+    }
+%>
+
+<div class="header">
+    <h2 class="header-title"><%= pageTitle%></h2>
 <div class="header">
   <h2 class="header-title">Dashboard</h2>
   <div class="header-actions">
