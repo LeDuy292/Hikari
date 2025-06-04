@@ -1,0 +1,313 @@
+/* Progress Report Page Styles */
+:root {
+    --primary-color: #FB9400;
+    --secondary-color: #34495e;
+    --success-color: #28a745; /* Adjusted to match progress-report green */
+    --danger-color: #dc3545; /* Adjusted to match progress-report red */
+    --warning-color: #f57c00; /* Adjusted to match progress-report orange */
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-light: #f8f9fa; /* Adjusted to match progress-report background */
+    --border-color: #dee2e6; /* Adjusted to match progress-report border */
+    --white-color: #ffffff;
+}
+
+.stat-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    background-color: var(--white-color); /* Use variable */
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card .card-title {
+    color: var(--text-light); /* Use variable */
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color); /* Use variable */
+    margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-trend {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stat-trend.positive {
+    color: var(--success-color); /* Use variable */
+}
+
+.stat-trend.negative {
+    color: var(--danger-color); /* Use variable */
+}
+
+/* Chart Card Styles */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--white-color); /* Use variable */
+}
+
+.card-header {
+    border-bottom: 1px solid var(--border-color); /* Use variable */
+    background-color: var(--bg-light); /* Use variable */
+    border-radius: 12px 12px 0 0;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Table Styles */
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    font-weight: 600;
+    color: var(--text-dark); /* Use variable */
+    border-top: none;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Rating Styles */
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rating i {
+    color: var(--warning-color); /* Use variable */
+}
+
+/* Modal Styles */
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    background-color: var(--white-color); /* Use variable */
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border-color); /* Use variable */
+    background-color: var(--bg-light); /* Use variable */
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+/* Instructor Profile Styles */
+.instructor-profile {
+    padding: 1rem;
+    background-color: var(--bg-light); /* Use variable */
+    border-radius: 8px;
+}
+
+.instructor-profile img {
+    border: 2px solid var(--primary-color); /* Use variable */
+}
+
+/* Form Controls */
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid var(--border-color); /* Use variable */
+    padding: 0.5rem 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color); /* Use variable */
+    box-shadow: 0 0 0 0.2rem rgba(251, 148, 0, 0.25); /* Keep specific shadow if needed or replace with a variable */
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--primary-color); /* Use variable */
+    border-color: var(--primary-color); /* Use variable */
+}
+
+.btn-primary:hover {
+    background-color: #e68600; /* Keep specific hover or replace with a darker primary variable */
+    border-color: #e68600; /* Keep specific hover or replace with a darker primary variable */
+}
+
+/* Chart Container Styles */
+canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+
+/* Progress Report specific styles */
+.progress-card {
+    background-color: var(--white-color); /* Use variable */
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.progress-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark); /* Use variable */
+    margin: 0;
+}
+
+.progress-status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-on-track {
+    background-color: #e8f5e9; /* Keep specific background or define status background variables */
+    color: var(--success-color); /* Use variable */
+}
+
+.status-behind {
+    background-color: #fff3e0; /* Keep specific background or define status background variables */
+    color: var(--warning-color); /* Use variable */
+}
+
+.status-completed {
+    background-color: #e3f2fd; /* Keep specific background or define status background variables */
+    color: #1976d2; /* Keep specific color or define a status color variable */
+}
+
+.progress-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.stat-item {
+    padding: 1rem;
+    background-color: var(--bg-light); /* Use variable */
+    border-radius: 8px;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: var(--text-light); /* Use variable */
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color); /* Use variable */
+}
+
+.progress-chart {
+    margin-bottom: 1.5rem;
+}
+
+.chart-container {
+    position: relative;
+    height: 300px;
+}
+
+.progress-table {
+    margin-top: 1.5rem;
+}
+
+.progress-table th {
+    background-color: var(--bg-light); /* Use variable */
+    font-weight: 600;
+}
+
+.progress-table td {
+    vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .progress-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-container {
+        height: 200px;
+    }
+
+    .progress-table {
+        margin: 0 -1.5rem;
+    }
+
+    .table-responsive {
+        border-radius: 0;
+    }
+}
+
+/* Sidebar Layout Fix */
+.main-content {
+    /*    flex: 1;
+        min-height: 100vh;
+        background-color: #f8f9fa;
+        margin-left: 295px;*/
+    flex: 1;
+    padding: 32px;
+    margin-left: 320px;
+    background-color: #f1f5f9;
+}
+
+.content-wrapper {
+    padding: 2rem;
+    padding-top: 8rem;
+}
+
+/* Header styles */
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
+}
+
+@media (max-width: 991.98px) {
+    .main-content {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+    }
+}
+
