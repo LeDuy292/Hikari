@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f7fa;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+@media (max-width: 1100px) {
+    .main-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .lesson-list {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 12px;
+    }
+    .lesson-card {
+        min-width: 220px;
+    }
+    .lesson-main {
+        width: 100%;
+    }
+    .ratings-section {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+@media (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+    .main-header {
+        padding: 24px 16px 0 0;
+    }
+    .main-content {
+        padding: 16px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 18px;
+    }
+}

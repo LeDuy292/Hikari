@@ -3,14 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/SWP391/project/Hikari/web/view/teacher/manageMaterials.jsp</file>
-            <file>file:/D:/SWP391/project/Hikari/web/view/teacher/manageTest.jsp</file>
-            <file>file:/D:/SWP391/project/Hikari/web/assets/css/sidebar.css</file>
-            <file>file:/D:/SWP391/project/Hikari/web/view/teacher/sidebar.jsp</file>
-            <file>file:/D:/SWP391/project/Hikari/web/view/coordinator/home.jsp</file>
-            <file>file:/D:/SWP391/project/Hikari/web/view/teacher/messages.jsp</file>
-            <file>file:/D:/SWP391/project/Hikari/web/assets/css/message.css</file>
-            <file>file:/D:/SWP391/project/Hikari/web/view/coordinator/course-approval.jsp</file>
+            <file>file:/D:/VisualStudio/HiKAri_Project/Hikari/src/java/model/CourseEnrollment.java</file>
+            <file>file:/D:/VisualStudio/HiKAri_Project/Hikari/src/java/model/Student.java</file>
         </group>
     </open-files>
 </project-private>
