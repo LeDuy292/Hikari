@@ -180,7 +180,7 @@
 <div class="sidebar">
     <div class="sidebar-top">
         <div class="sidebar-header">
-            <img src="${pageContext.request.contextPath}/assets/images/logo.png" alt="Logo HIKARI" class="sidebar-logo" />
+            <img src="${pageContext.request.contextPath}/assets/img/logo.png" alt="Logo HIKARI" class="sidebar-logo" />
             <div>
                 <span class="sidebar-title">HIKARI</span>
                 <br> 
@@ -217,7 +217,7 @@
         </a>
     </div>
     <div class="sidebar-bottom">
-        <img src="${pageContext.request.contextPath}/assets/images/learning.jpg" alt="Sidebar Image" class="sidebar-image" />
+        <img src="${pageContext.request.contextPath}/assets/img/learning.jpg" alt="Sidebar Image" class="sidebar-image" />
         <a href="manageMessages.jsp" class="sidebar-message-link <%= currentPage.equals("manageMessages.jsp") ? "active" : ""%>">
             <i class="fas fa-envelope"></i>
             <span>Nhắn Tin</span>

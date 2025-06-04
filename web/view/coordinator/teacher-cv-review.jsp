@@ -13,11 +13,11 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <jsp:include page="components/sidebarnew.jsp" />
+                             <jsp:include page="sidebarCoordinator.jsp" />
 
             <!-- Main Content -->
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-content">
-                <jsp:include page="components/header.jsp" />
+            <jsp:include page="headerCoordinator.jsp" />
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Teacher CV Review</h1>
                 </div>
