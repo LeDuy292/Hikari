@@ -1,24 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
 import java.time.LocalDate;
 import java.util.List;
 
-/**
- *
- * @author ADMIN
- */
 public class Student {
+
     private String studentID;
     private String userID;
     private LocalDate enrollmentDate;
     private List progress;
     private String level;
 
-  public Student(String studentID, String userID, LocalDate enrollmentDate, List progress, String level) {
+    public Student(String studentID, String userID, LocalDate enrollmentDate, List progress, String level) {
         this.studentID = studentID;
         this.userID = userID;
         this.enrollmentDate = enrollmentDate;
@@ -50,7 +43,7 @@ public class Student {
         this.enrollmentDate = enrollmentDate;
     }
 
-   public List getProgress() {
+    public List getProgress() {
         return progress;
     }
 
@@ -70,5 +63,5 @@ public class Student {
     public String toString() {
         return "Student{" + "studentID=" + studentID + ", userID=" + userID + ", enrollmentDate=" + enrollmentDate + ", progress=" + progress + ", level=" + level + '}';
     }
-    
+
 }
