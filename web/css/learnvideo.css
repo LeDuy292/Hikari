@@ -1,0 +1,102 @@
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+  main {
+    padding-left: 2rem !important;
+    padding-right: 2rem;
+  }
+  .lesson-list-container {
+    display: none;
+  }
+  .video-section {
+    width: 100% !important;
+  }
+}
+
+.lesson-item {
+  background-color: #fff3e0;
+  border-left: 4px solid #ff9800;
+  transition: background-color 0.3s ease;
+}
+
+.lesson-item:hover {
+  background-color: #ffecd1;
+}
+
+.lesson-item.completed i {
+  color: #ff9800;
+}
+
+.video-section iframe {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.exercise-option {
+  background-color: #fff3e0;
+  border: 2px solid #ff9800;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.exercise-option:hover {
+  background-color: #ffecd1;
+  border-color: #ffb347;
+}
+
+.exercise-option.correct {
+  background-color: #d4edda;
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.exercise-option.wrong {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.subtopic-item {
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.subtopic-item:hover {
+  background-color: #ffecd1;
+}
+
+.subtopic-item.active {
+  background-color: #ffecd1;
+  font-weight: 600;
+}
+
+.subtopic-list {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.subtopic-list.active {
+  display: block;
+  opacity: 1;
+}
+
+.lesson-header i {
+  transition: transform 0.3s ease;
+}
+
+.lesson-header.active i {
+  transform: rotate(90deg);
+}
+
+#exerciseSection {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#exerciseSection.visible {
+  display: block;
+  opacity: 1;
+}

@@ -1,0 +1,8 @@
+.lesson-item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 0;
+}
+
+.lesson-item:hover {
+  background: #fef3e7;
+}
