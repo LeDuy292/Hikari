@@ -12,12 +12,12 @@
 <body>
     <div class="d-flex bg-light min-vh-100">
         <!-- Sidebar -->
-        <%--<jsp:include page="components/sidebar.jsp" />--%>
-        <jsp:include page="components/sidebarnew.jsp" />
+                      <jsp:include page="sidebarCoordinator.jsp" />
+
         <!-- Main Content -->
         <div class="main-content flex-grow-1">
             <!-- Header -->
-            <jsp:include page="components/header.jsp" />
+            <jsp:include page="headerCoordinator.jsp" />
             <!-- Content -->
             <div class="content-wrapper">
                 <!-- Statistics Overview -->
