@@ -12,7 +12,7 @@
 <body>
     <div class="d-flex">
         <!-- Sidebar -->
-                            <jsp:include page="sidebarCoordinator.jsp" />
+        <jsp:include page="sidebarCoordinator.jsp" />
         <!-- Main Content -->
         <div class="main-content">
             <!-- Header -->

@@ -20,8 +20,8 @@
 
 <div class="header">
     <h2 class="header-title"><%= pageTitle%></h2>
-<div class="header">
-  <h2 class="header-title">Dashboard</h2>
+<!--<div class="header">
+  <h2 class="header-title">Dashboard</h2>-->
   <div class="header-actions">
     <div class="user-profile">
         <img src="${pageContext.request.contextPath}/assets/images/avatar.png" alt="Ảnh Đại Diện Quản Trị" class="avatar" />
