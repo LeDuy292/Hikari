@@ -1,0 +1,39 @@
+.grammar-section {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 16px 0;
+  display: none;
+}
+
+.grammar-section.active {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffedd5;
+  font-weight: 600;
+}
+
+.progress-bar {
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background-color: #f97316;
+  height: 100%;
+  transition: width 0.3s ease;
+}
