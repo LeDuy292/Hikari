@@ -8,11 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/detailfree.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/sidebar.css"/>
-  <link rel="stylesheet" href="css/header.css"/>
-  <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/detailfree.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/style.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/sidebar.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/header.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/footer.css"/>
 </head>
 <body class="bg-[#f7f7fa] font-['Poppins']">
   <div class="flex min-h-screen">
@@ -29,7 +29,7 @@
         <div class="flex flex-col md:flex-row gap-8">
           <!-- Course image and actions -->
           <div class="md:w-1/3">
-            <img src="img/Yamanakako-lake-in-fall.jpeg" alt="Course" class="rounded-xl w-full h-64 object-cover mb-4 shadow-md"/>
+            <img src="${pageContext.request.contextPath}/assets/img/student/Yamanakako-lake-in-fall.jpeg" alt="Course" class="rounded-xl w-full h-64 object-cover mb-4 shadow-md"/>
             <div class="flex flex-col gap-4">
               <div class="text-orange-500 font-bold text-2xl mb-2"></div>
               <button id="startLearningBtn" class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-orange-600 transition">
@@ -91,7 +91,7 @@
       <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 animate-fadeIn">
         <h2 class="text-2xl font-bold text-gray-800 mb-4">Về giảng viên</h2>
         <div class="flex items-center gap-4">
-          <img src="img/instructor.jpg" alt="Instructor" class="w-20 h-20 rounded-full border-2 border-orange-200 object-cover"/>
+          <img src="${pageContext.request.contextPath}/assets/img/student/instructor.jpg" alt="Instructor" class="w-20 h-20 rounded-full border-2 border-orange-200 object-cover"/>
           <div>
             <h3 class="text-lg font-semibold text-gray-800">Nguyễn Văn A</h3>
             <p class="text-gray-600">Giảng viên tiếng Nhật với hơn 10 năm kinh nghiệm, đạt chứng chỉ JLPT N1. Chuyên gia trong việc giảng dạy từ vựng và ngữ pháp cho người mới bắt đầu, với phương pháp dễ hiểu và thực tế.</p>
