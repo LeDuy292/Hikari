@@ -8,11 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/vocabulary.css"/>
-   <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/sidebar.css"/>
-  <link rel="stylesheet" href="css/header.css"/>
-  <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/vocabulary.css"/>
+   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/style.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/sidebar.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/header.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/footer.css"/>
 </head>
 <body class="bg-[#f7f7fa] font-['Poppins']">
   <div class="flex min-h-screen">

@@ -9,12 +9,12 @@
         <button class="icon-btn"><i class="fa fa-shopping-cart"></i></button>
         <button class="icon-btn"><i class="fa fa-bell"></i></button>
         <button class="login-btn">Đăng nhập</button>
-        <img src="image/cat-icon.png" alt="Avatar" class="avatar">
+        <img src="${pageContext.request.contextPath}/assets/img/student/cat-icon.png" alt="Avatar" class="avatar">
     </div>
 </div>
 <div class="banner-container">
     <div class="banner">
-        <img src="image/Yamanakako-lake-in-fall.jpeg" alt="Banner" class="banner-img" />
+        <img src="${pageContext.request.contextPath}/assets/img/student/Yamanakako-lake-in-fall.jpeg" alt="Banner" class="banner-img" />
         <div class="banner-overlay"></div>
         <div class="banner-text">
             <h1 id="bannerTitle" class="banner-title">Tài liệu trả phí</h1>

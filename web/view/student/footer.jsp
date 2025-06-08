@@ -3,7 +3,7 @@
   <div class="footer-content">
     <div class="footer-main">
       <div class="footer-brand-section">
-          <img src="image/cat-icon.png" alt="Logo" class="footer-logo">
+          <img src="${pageContext.request.contextPath}/assets/img/student/cat-icon.png" alt="Logo" class="footer-logo">
         <div class="footer-brand-text">
           <div class="footer-brand">HIKARI</div>
           <div class="footer-sub">JAPAN</div>

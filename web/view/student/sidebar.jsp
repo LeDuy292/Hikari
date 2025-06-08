@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <aside class="sidebar">
     <div class="logo">
-        <img src="image/cat-icon.png" alt="Logo" />
+        <img src="${pageContext.request.contextPath}/assets/img/student/cat-icon.png" alt="Logo" />
         <div>
             <div class="logo-text">HIKARI</div>
             <div class="logo-sub">JAPAN</div>
@@ -17,7 +17,7 @@
     </div>
     <div class="bottom-section">
         <div class="image-placeholder">
-            <img src="image/Yamanakako-lake-in-fall.jpeg" alt="Placeholder Image" />
+            <img src="${pageContext.request.contextPath}/assets/img/student/Yamanakako-lake-in-fall.jpeg" alt="Placeholder Image" />
         </div>
         <a href="#" class="menu-item"><i class="fa fa-comments"></i>Chat</a>
     </div>

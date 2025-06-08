@@ -8,11 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/sidebar.css"/>
-  <link rel="stylesheet" href="css/header.css"/>
-  <link rel="stylesheet" href="css/footer.css"/>
-  <link rel="stylesheet" href="css/listeningLesson.css"/>  <!-- Tệp CSS mới -->
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/style.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/sidebar.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/header.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/footer.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/listeningLesson.css"/>  <!-- Tệp CSS mới -->
 </head>
 <body class="main-body">
   <div class="main-container">
@@ -48,19 +48,19 @@
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
             <div class="flex flex-col items-center">
               <p class="text-gray-700 font-semibold mb-2">1</p>
-              <img src="img/drink1.png" alt="Drink 1" class="drink-image">
+              <img src="${pageContext.request.contextPath}/assets/img/student/drink1.png" alt="Drink 1" class="drink-image">
             </div>
             <div class="flex flex-col items-center">
               <p class="text-gray-700 font-semibold mb-2">2</p>
-              <img src="img/drink2.png" alt="Drink 2" class="drink-image">
+              <img src="${pageContext.request.contextPath}/assets/img/student/drink2.png" alt="Drink 2" class="drink-image">
             </div>
             <div class="flex flex-col items-center">
               <p class="text-gray-700 font-semibold mb-2">3</p>
-              <img src="img/drink3.png" alt="Drink 3" class="drink-image">
+              <img src="${pageContext.request.contextPath}/assets/img/student/drink3.png" alt="Drink 3" class="drink-image">
             </div>
             <div class="flex flex-col items-center">
               <p class="text-gray-700 font-semibold mb-2">4</p>
-              <img src="img/drink4.png" alt="Drink 4" class="drink-image">
+              <img src="${pageContext.request.contextPath}/assets/img/student/drink4.png" alt="Drink 4" class="drink-image">
             </div>
           </div>
 
