@@ -11,24 +11,24 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import utils.QADatabase;
+import utils.ImprovedQADatabase;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.json.JSONObject;
 
-@WebServlet(name = "GeminiServlet", urlPatterns = {"/chat"})
-public class GeminiServlet extends HttpServlet {
+@WebServlet(name = "FixedGeminiServlet", urlPatterns = {"/chat"})
+public class FixedGeminiServlet extends HttpServlet {
     private static final String GEMINI_API_KEY = "AIzaSyD6GHN1RcJlxyBpEOlr3JkE_j7lAvD6aV0";
     private static final String GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
-    private QADatabase qaDatabase;
+    private ImprovedQADatabase qaDatabase;
     
     @Override
     public void init() throws ServletException {
         super.init();
-        qaDatabase = QADatabase.getInstance();
-        System.out.println("Enhanced Gemini Servlet initialized with " + qaDatabase.getQACount() + " Q&A pairs");
+        qaDatabase = ImprovedQADatabase.getInstance();
+        System.out.println("Fixed Gemini Servlet initialized with " + qaDatabase.getQACount() + " Q&A pairs");
     }
 
     @Override
@@ -37,11 +37,20 @@ public class GeminiServlet extends HttpServlet {
         HttpSession session = request.getSession();
         String userInput = request.getParameter("userInput");
         String responseText = request.getParameter("responseText");
+        String action = request.getParameter("action");
 
         response.setContentType("application/json; charset=UTF-8");
         response.setCharacterEncoding("UTF-8");
 
         JSONObject jsonResponse = new JSONObject();
+        
+        // Handle clear action
+        if ("clear".equals(action)) {
+            session.removeAttribute("chatHistory");
+            jsonResponse.put("status", "cleared");
+            response.getWriter().write(jsonResponse.toString());
+            return;
+        }
         
         if (userInput != null && !userInput.trim().isEmpty()) {
             try {
@@ -49,32 +58,30 @@ public class GeminiServlet extends HttpServlet {
                 boolean fromDatabase = false;
                 
                 if (responseText != null && !responseText.trim().isEmpty()) {
-                    // Use provided responseText for predefined answers
                     textResponse = responseText;
                     fromDatabase = true;
                 } else {
-                    // Step 1: Try to find answer in local Q&A database
+                    // Enhanced database search
                     String dbAnswer = qaDatabase.findAnswer(userInput);
                     
-                    if (dbAnswer != null) {
+                    if (dbAnswer != null && !dbAnswer.trim().isEmpty()) {
                         textResponse = dbAnswer;
                         fromDatabase = true;
-                        System.out.println("Answer found in database for: " + userInput);
+                        System.out.println("✅ Answer found in database for: " + userInput);
                     } else {
-                        // Step 2: Fallback to Gemini API with context
-                        System.out.println("No database match, using Gemini API for: " + userInput);
+                        System.out.println("❌ No database match, using Gemini API for: " + userInput);
                         textResponse = getGeminiResponse(userInput);
                         fromDatabase = false;
                     }
                 }
 
-                // Store in session history with source indicator
+                // Store in session history
                 List<String[]> chatHistory = (List<String[]>) session.getAttribute("chatHistory");
                 if (chatHistory == null) {
                     chatHistory = new ArrayList<>();
                 }
                 
-                // Add source indicator to response
+                // Add source indicator
                 String responseWithSource = textResponse;
                 if (fromDatabase) {
                     responseWithSource += "\n\n💡 *Thông tin từ cơ sở dữ liệu Hikari*";
@@ -85,12 +92,11 @@ public class GeminiServlet extends HttpServlet {
                 chatHistory.add(new String[]{userInput, responseWithSource});
                 session.setAttribute("chatHistory", chatHistory);
 
-                // Return JSON response
                 jsonResponse.put("text", responseWithSource);
                 jsonResponse.put("source", fromDatabase ? "database" : "api");
                 
             } catch (Exception ex) {
-                Logger.getLogger(GeminiServlet.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(FixedGeminiServlet.class.getName()).log(Level.SEVERE, null, ex);
                 jsonResponse.put("text", "Xin lỗi, có lỗi xảy ra khi xử lý câu hỏi của bạn. Vui lòng thử lại sau.");
                 jsonResponse.put("source", "error");
             }
@@ -99,7 +105,6 @@ public class GeminiServlet extends HttpServlet {
             jsonResponse.put("source", "error");
         }
 
-        // Send JSON to client
         response.getWriter().write(jsonResponse.toString());
     }
     
@@ -113,11 +118,9 @@ public class GeminiServlet extends HttpServlet {
         JSONObject jsonResponse = new JSONObject();
         
         if ("suggestions".equals(action)) {
-            // Return suggested questions from database
             List<String> suggestions = qaDatabase.getSuggestedQuestions(5);
             jsonResponse.put("suggestions", suggestions);
         } else if ("stats".equals(action)) {
-            // Return database statistics
             jsonResponse.put("totalQA", qaDatabase.getQACount());
             jsonResponse.put("status", "active");
         }
@@ -126,15 +129,17 @@ public class GeminiServlet extends HttpServlet {
     }
     
     private String getGeminiResponse(String userInput) throws Exception {
-        // Enhanced prompt with Hikari context
         String contextualPrompt = "Bạn là AI Assistant của hệ thống học tiếng Nhật HIKARI. " +
-                "Hãy trả lời câu hỏi sau một cách hữu ích và chính xác về việc học tiếng Nhật, " +
-                "JLPT, văn hóa Nhật Bản, hoặc hệ thống Hikari. " +
-                "Nếu không biết chắc chắn, hãy thành thật nói không biết và gợi ý liên hệ support. " +
+                "HIKARI là nền tảng học tiếng Nhật trực tuyến với các khóa học từ N5 đến N1. " +
+                "Học phí các khóa học: N5 (2 triệu), N4 (2.5 triệu), N3 (3 triệu), N2 (3.5 triệu), N1 (4 triệu), " +
+                "Kanji Mastery (1.8 triệu), Hội thoại Thực tế (2.2 triệu), Văn hóa Nhật (1.5 triệu), " +
+                "Tiếng Nhật Thương mại (3.2 triệu), Luyện nghe N3-N2 (1.9 triệu). " +
+                "Hãy trả lời câu hỏi sau một cách hữu ích và chính xác. " +
+                "Nếu không biết chắc chắn, hãy gợi ý liên hệ support@hikari.edu.vn. " +
                 "Câu hỏi: " + userInput;
         
         String jsonPayload = "{\"contents\":[{\"parts\":[{\"text\":\"" + 
-                            contextualPrompt.replace("\"", "\\\"") + "\"}]}]}";
+                            contextualPrompt.replace("\"", "\\\"").replace("\n", "\\n") + "\"}]}]}";
         
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest apiRequest = HttpRequest.newBuilder()
@@ -155,7 +160,6 @@ public class GeminiServlet extends HttpServlet {
                     .getString("text");
         } catch (Exception e) {
             System.err.println("Error parsing Gemini response: " + e.getMessage());
-            System.err.println("Response body: " + apiResponse.body());
             return "Xin lỗi, tôi không thể xử lý câu hỏi này lúc này. Vui lòng thử lại sau hoặc liên hệ support@hikari.edu.vn để được hỗ trợ.";
         }
     }
