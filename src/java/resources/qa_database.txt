@@ -1,4 +1,4 @@
-# HIKARI AI CHATBOT - 1000 QUESTIONS & ANSWERS DATABASE
+# HIKARI AI CHATBOT - 1500 QUESTIONS & ANSWERS DATABASE
 # Format: Q: [Question] | A: [Answer]
 
 # === HỆ THỐNG HIKARI ===
@@ -11,6 +11,36 @@ Q: Ai có thể sử dụng Hikari? | A: Hikari phục vụ 4 nhóm người dù
 Q: Làm sao để đăng ký tài khoản Hikari? | A: Bạn truy cập trang chủ Hikari, click "Đăng ký", điền thông tin cá nhân (họ tên, email, mật khẩu), xác nhận email và hoàn tất đăng ký.
 
 Q: Tôi quên mật khẩu Hikari thì làm sao? | A: Click "Quên mật khẩu" ở trang đăng nhập, nhập email đã đăng ký, kiểm tra email để nhận link reset mật khẩu, sau đó tạo mật khẩu mới.
+
+Q: Hikari có hỗ trợ ngôn ngữ nào ngoài tiếng Nhật? | A: Hiện tại Hikari tập trung vào tiếng Nhật, nhưng giao diện hỗ trợ tiếng Anh và tiếng Việt. Hỗ trợ đa ngôn ngữ sẽ được thêm trong tương lai.
+
+Q: Hikari có giới hạn độ tuổi người dùng không? | A: Không, Hikari phù hợp cho mọi lứa tuổi từ học sinh, sinh viên đến người đi làm, miễn là có nhu cầu học tiếng Nhật.
+
+Q: Hikari có tích hợp công cụ từ điển không? | A: Có, Hikari tích hợp từ điển Kanji, từ vựng và ngữ pháp, hỗ trợ tra cứu nhanh trong bài học và diễn đàn.
+
+Q: Tôi có thể học thử trước khi đăng ký khóa học không? | A: Có, Hikari cho phép học thử một số bài học miễn phí trước khi đăng ký khóa học chính thức. Truy cập mục "Học thử" trên trang chủ.
+
+Q: Hikari có cộng đồng học tập không? | A: Có, diễn đàn Hikari là nơi học viên, giảng viên và điều phối viên thảo luận, chia sẻ kinh nghiệm và tài liệu học tập.
+
+Q: Hikari có hỗ trợ người khuyết tật không? | A: Hikari đang phát triển tính năng hỗ trợ như phụ đề lớn hơn, âm thanh mô tả, và giao diện tối ưu cho người khiếm thị.
+
+Q: Hikari có chương trình khách hàng thân thiết không? | A: Có, học viên hoàn thành nhiều khóa học sẽ nhận điểm tích lũy, đổi lấy mã giảm giá hoặc tài liệu học tập miễn phí.
+
+Q: Hikari có bảo mật thông tin cá nhân không? | A: Có, Hikari tuân thủ GDPR và các quy định bảo mật, sử dụng mã hóa SSL cho dữ liệu người dùng trong bảng UserAccount.
+
+Q: Hikari có khóa học cho trẻ em không? | A: Hiện tại chưa có khóa riêng cho trẻ em, nhưng khóa N5 Cơ bản phù hợp với học sinh từ 12 tuổi trở lên.
+
+Q: Tôi có thể học nhiều khóa cùng lúc trên Hikari không? | A: Có, bạn có thể đăng ký nhiều khóa học và quản lý tiến độ riêng biệt trong mục "Khóa học của tôi".
+
+Q: Hikari có cung cấp tài liệu in không? | A: Không, tài liệu được cung cấp dưới dạng PDF trong mục "Tài liệu bài học" để tiết kiệm chi phí và bảo vệ môi trường.
+
+Q: Tôi có thể sử dụng Hikari ở quốc gia nào? | A: Hikari là nền tảng trực tuyến, có thể truy cập từ bất kỳ quốc gia nào với kết nối internet ổn định.
+
+Q: Hikari có hỗ trợ học qua video call không? | A: Một số khóa học có phiên tư vấn qua video call với giảng viên, nhưng chủ yếu là video bài giảng được ghi sẵn.
+
+Q: Hikari có tính năng gamification không? | A: Có, Hikari có bảng xếp hạng, huy hiệu (Achievements), và điểm hoạt động (UserActivityScore) để khuyến khích học tập.
+
+Q: Hikari có khóa học ngoại tuyến không? | A: Không, Hikari là nền tảng trực tuyến hoàn toàn, yêu cầu kết nối internet để truy cập bài học và tính năng.
 
 # === KHÓA HỌC ===
 Q: Hikari có những khóa học nào? | A: Hikari có 10 khóa học chính: N5 Cơ bản (2tr), N4 Trung cấp (2.5tr), N3 Cao cấp (3tr), N2 Luyện thi (3.5tr), N1 Chuyên sâu (4tr), Kanji Mastery (1.8tr), Hội thoại Thực tế (2.2tr), Văn hóa Nhật (1.5tr), Tiếng Nhật Thương mại (3.2tr), Luyện nghe N3-N2 (1.9tr).
@@ -33,6 +63,28 @@ Q: Khóa Văn hóa Nhật Bản học gì? | A: Tìm hiểu lịch sử Nhật c
 
 Q: Khóa Tiếng Nhật Thương mại dành cho ai? | A: Dành cho người làm việc với Nhật: Keigo (kính ngữ), email kinh doanh, thuyết trình, đàm phán. Yêu cầu N3-N2. Thời lượng 160 giờ, học phí 3.2 triệu.
 
+Q: Khóa Luyện nghe N3-N2 có gì nổi bật? | A: Luyện nghe qua hội thoại thực tế, tin tức, bài giảng. Audio chất lượng cao, có phân tích chi tiết. Thời lượng 90 giờ, học phí 1.9 triệu đồng.
+
+Q: Tôi có thể học khóa Văn hóa Nhật Bản mà không biết tiếng Nhật không? | A: Có, khóa Văn hóa Nhật Bản sử dụng tiếng Việt và tiếng Anh để giảng giải, phù hợp cho người mới bắt đầu hoặc không biết tiếng Nhật.
+
+Q: Khóa học nào ngắn nhất trên Hikari? | A: Khóa Văn hóa Nhật Bản ngắn nhất với thời lượng 60 giờ, học phí 1.5 triệu đồng, tập trung vào văn hóa và không yêu cầu tiếng Nhật cao.
+
+Q: Khóa học nào dài nhất trên Hikari? | A: Khóa JLPT N1 Chuyên sâu dài nhất với 240 giờ, học phí 4 triệu đồng, dành cho người muốn đạt trình độ cao nhất.
+
+Q: Khóa học có giới hạn thời gian hoàn thành không? | A: Có, bạn cần hoàn thành khóa học trước ngày endDate (bảng Courses). Sau đó, bạn vẫn có thể xem lại bài học nhưng không nộp bài tập.
+
+Q: Tôi có thể chuyển khóa học đã đăng ký không? | A: Có, liên hệ support@hikari.edu.vn trong 7 ngày đầu để chuyển khóa học miễn phí nếu chưa hoàn thành quá 20% nội dung.
+
+Q: Khóa học có bài kiểm tra định kỳ không? | A: Có, mỗi khóa có bài kiểm tra giữa khóa và cuối khóa, được lưu trong bảng Test, giúp đánh giá tiến độ học tập.
+
+Q: Khóa học có hỗ trợ tài liệu bổ sung không? | A: Có, tài liệu bổ sung (PDF, audio, video) được lưu trong bảng Document, tải miễn phí trong mỗi bài học.
+
+Q: Tôi có thể học lại khóa học sau khi hoàn thành không? | A: Có, bạn có thể truy cập lại nội dung khóa học trong 1 năm sau khi hoàn thành, miễn là khóa học còn isActive (bảng Courses).
+
+Q: Khóa học có cung cấp flashcard không? | A: Khóa Kanji Mastery cung cấp flashcard miễn phí, các khóa khác có flashcard tùy chọn trong mục tài liệu bài học.
+
+Q: Khóa học có hỗ trợ học viên nước ngoài không? | A: Có, Hikari hỗ trợ giao diện tiếng Anh và tài liệu song ngữ (tiếng Việt/Anh) cho học viên quốc tế.
+
 # === HỌC PHÍ VÀ THANH TOÁN ===
 Q: Học phí Hikari như thế nào? | A: Học phí từ 1.5-4 triệu tùy khóa: N5 (2tr), N4 (2.5tr), N3 (3tr), N2 (3.5tr), N1 (4tr), Kanji (1.8tr), Hội thoại (2.2tr), Văn hóa (1.5tr), Thương mại (3.2tr), Luyện nghe (1.9tr).
 
@@ -43,6 +95,36 @@ Q: Hikari có mã giảm giá không? | A: Có! Hikari có các mã: NEWBIE2024 
 Q: Thanh toán bằng cách nào? | A: Hikari hỗ trợ thanh toán qua: chuyển khoản ngân hàng, ví điện tử (Momo, ZaloPay), thẻ tín dụng/ghi nợ. Hệ thống xác nhận thanh toán tự động.
 
 Q: Có được hoàn tiền không? | A: Hoàn tiền 100% nếu hủy trong 7 ngày đầu chưa học bài nào. Hoàn 50% nếu hủy trong 30 ngày đầu. Sau 30 ngày không hoàn tiền.
+
+Q: Làm sao biết thanh toán đã thành công? | A: Sau khi thanh toán, bạn nhận email xác nhận từ Hikari, và trạng thái paymentStatus trong bảng Payment chuyển sang "Complete".
+
+Q: Mã giảm giá có giới hạn thời gian không? | A: Có, mã giảm giá có hiệu lực từ startDate đến endDate (bảng Discount). Kiểm tra chi tiết trong mục "Khuyến mãi" trên trang chủ.
+
+Q: Tôi có thể thanh toán bằng ngoại tệ không? | A: Hiện tại chỉ hỗ trợ thanh toán bằng VNĐ. Hikari đang phát triển tính năng thanh toán quốc tế bằng USD/EUR trong năm 2025.
+
+Q: Hikari có phí ẩn nào không? | A: Không, học phí hiển thị trong bảng Courses là toàn bộ chi phí. Không có phí ẩn như tài liệu, bài kiểm tra, hay chứng chỉ.
+
+Q: Tôi có thể kiểm tra lịch sử thanh toán ở đâu? | A: Vào mục "Tài khoản" → "Lịch sử giao dịch" để xem chi tiết thanh toán (bảng Payment) bao gồm số tiền, ngày, trạng thái.
+
+Q: Có thể sử dụng nhiều mã giảm giá cho một khóa học không? | A: Không, mỗi khóa học chỉ áp dụng một mã giảm giá (bảng Discount). Chọn mã có giá trị giảm cao nhất.
+
+Q: Thanh toán bị lỗi thì làm sao? | A: Kiểm tra kết nối internet, thông tin thẻ/ví, liên hệ ngân hàng nếu cần. Gửi email đến support@hikari.edu.vn với mã giao dịch để được hỗ trợ.
+
+Q: Hikari có hỗ trợ học bổng không? | A: Hiện tại chưa có học bổng chính thức, nhưng mã giảm giá và chương trình khuyến mãi giúp giảm chi phí học tập.
+
+Q: Tôi có thể thanh toán cho người khác không? | A: Có, bạn có thể thanh toán cho tài khoản khác, nhưng cần cung cấp userID của người nhận khóa học khi thanh toán.
+
+Q: Thanh toán có an toàn không? | A: Có, Hikari sử dụng cổng thanh toán mã hóa SSL, tuân thủ PCI-DSS, đảm bảo an toàn thông tin trong bảng Payment.
+
+Q: Tôi có thể xin hóa đơn VAT không? | A: Có, liên hệ support@hikari.edu.vn với thông tin thanh toán (transactionID) để yêu cầu hóa đơn VAT.
+
+Q: Mã giảm giá có áp dụng cho tất cả khóa học không? | A: Không, mỗi mã giảm giá áp dụng cho một khóa học cụ thể (xem courseID trong bảng Discount).
+
+Q: Tôi có thể chuyển khoản học phí qua ứng dụng ngân hàng không? | A: Có, thông tin chuyển khoản hiển thị khi chọn phương thức "Chuyển khoản ngân hàng" trong quy trình thanh toán.
+
+Q: Hikari có chương trình hoàn tiền cho học viên xuất sắc không? | A: Chưa có chương trình hoàn tiền, nhưng học viên đạt điểm cao có thể nhận huy hiệu "HighTestScorer" (bảng Achievements).
+
+Q: Thanh toán thất bại có bị trừ tiền không? | A: Nếu paymentStatus là "Cancel" (bảng Payment), bạn không bị trừ tiền. Liên hệ ngân hàng nếu thấy bất thường.
 
 # === JLPT VÀ THI CỬ ===
 Q: JLPT là gì? | A: JLPT (Japanese Language Proficiency Test) là kỳ thi năng lực tiếng Nhật quốc tế, có 5 cấp độ từ N5 (cơ bản) đến N1 (cao cấp), tổ chức 2 lần/năm (tháng 7 và 12).
@@ -65,6 +147,28 @@ Q: Kết quả thi thử có chính xác không? | A: Kết quả thi thử Hika
 
 Q: Lịch thi JLPT 2024 như thế nào? | A: JLPT 2024: Kỳ 1 (tháng 7/2024) và Kỳ 2 (tháng 12/2024). Đăng ký trước 3-4 tháng. Hikari sẽ thông báo lịch chi tiết.
 
+Q: Làm sao để đăng ký thi JLPT qua Hikari? | A: Hikari hiện không hỗ trợ đăng ký trực tiếp, nhưng cung cấp thông tin và hướng dẫn đăng ký JLPT qua website chính thức của kỳ thi.
+
+Q: Bài thi JLPT có thời gian bao lâu? | A: N5: 110 phút (Từ vựng/Ngữ pháp: 25 phút, Đọc: 50 phút, Nghe: 35 phút). N1: 165 phút (Từ vựng/Ngữ pháp: 35 phút, Đọc: 70 phút, Nghe: 60 phút).
+
+Q: Tôi có thể thi lại JLPT nếu không đỗ không? | A: Có, bạn có thể thi lại bất kỳ kỳ nào (tháng 7 hoặc 12). Không giới hạn số lần thi, nhưng cần đăng ký lại và đóng phí.
+
+Q: Hikari có khóa học luyện thi JLPT cấp tốc không? | A: Có, Hikari cung cấp khóa luyện thi N2 và N1 cấp tốc với lịch học tập trung, bài thi thử hàng tuần, thời lượng 100-150 giờ.
+
+Q: Điểm thi JLPT được lưu trữ ở đâu trên Hikari? | A: Điểm thi thử được lưu trong bảng TestTopScorer, có thể xem trong mục "Kết quả thi" của tài khoản.
+
+Q: Thi thử JLPT trên Hikari có mất phí không? | A: Miễn phí cho học viên đã đăng ký khóa học. Khách chưa đăng ký có thể tham gia với phí 50.000 VNĐ/lần.
+
+Q: Tôi có thể tải đề thi thử JLPT từ Hikari không? | A: Không, đề thi thử chỉ làm online trong hệ thống Hikari để đảm bảo tính bảo mật và công bằng.
+
+Q: Hikari có cung cấp mẹo thi JLPT không? | A: Có, mỗi khóa học JLPT có mục "Mẹo làm bài" với chiến lược quản lý thời gian, ưu tiên câu hỏi, và phân tích lỗi phổ biến.
+
+Q: JLPT có phần thi nói không? | A: Không, JLPT chỉ kiểm tra Ngữ pháp/Từ vựng, Đọc hiểu và Nghe hiểu. Kỹ năng nói được đánh giá trong các khóa học Hikari.
+
+Q: Tôi có thể xem đáp án bài thi thử JLPT không? | A: Có, sau khi hoàn thành thi thử, bạn nhận được đáp án chi tiết và giải thích trong mục "Kết quả thi".
+
+Q: Hikari có hỗ trợ luyện thi EJU không? | A: Hiện tại Hikari chỉ tập trung vào JLPT, nhưng đang phát triển khóa luyện thi EJU cho du học sinh trong tương lai.
+
 # === HIRAGANA VÀ KATAKANA ===
 Q: Hiragana là gì? | A: Hiragana là bảng chữ cái tiếng Nhật gồm 46 ký tự cơ bản, dùng viết từ thuần Nhật, trợ từ ngữ pháp, okurigana. Là nền tảng đầu tiên cần học.
 
@@ -79,6 +183,32 @@ Q: Katakana có khó hơn Hiragana không? | A: Katakana có hình dáng góc c�
 Q: Dakuten và Handakuten là gì? | A: Dakuten (゛) và Handakuten (゜) là dấu phụ thêm vào Hiragana/Katakana để tạo âm mới. VD: か→が, は→ば, は→ぱ. Tổng cộng có thêm 25 âm.
 
 Q: Có cần học thuộc lòng cả 2 bảng chữ không? | A: Có! Hiragana và Katakana là nền tảng bắt buộc. Không thể học tiếng Nhật mà không biết 2 bảng chữ này. Cần thuộc lòng 100%.
+
+Q: Hikari có bài tập Hiragana/Katakana không? | A: Có, khóa N5 Cơ bản có bài tập viết, đọc, và nhận biết Hiragana/Katakana trong bảng Exercise, kèm video hướng dẫn.
+
+Q: Cách phân biệt chữ Hiragana giống nhau? | A: Một số chữ dễ nhầm (さ/ち, ね/れ). Hãy tập trung vào nét đặc trưng, viết tay nhiều lần, dùng flashcard có hình minh họa.
+
+Q: Katakana có được dùng trong văn bản trang trọng không? | A: Ít được dùng trong văn trang trọng, chủ yếu cho từ mượn, tên riêng, hoặc nhấn mạnh. Văn trang trọng ưu tiên Kanji và Hiragana.
+
+Q: Tôi có thể học Hiragana qua trò chơi không? | A: Có, Hikari tích hợp trò chơi nhận diện Hiragana trong khóa N5, như ghép chữ, đố vui, và bài tập tương tác.
+
+Q: Cách luyện viết Hiragana đẹp? | A: Sử dụng giấy genkoyoshi, viết theo thứ tự nét chuẩn, luyện tập đều đặn, xem video hướng dẫn viết trên Hikari.
+
+Q: Katakana có xuất hiện trong JLPT N5 không? | A: Có, JLPT N5 kiểm tra cả Hiragana và Katakana trong phần từ vựng và đọc hiểu. Bạn cần nắm vững cả hai.
+
+Q: Hikari có tài liệu luyện tập Hiragana không? | A: Có, tài liệu PDF và flashcard Hiragana có trong bảng Document, tải miễn phí trong khóa N5 Cơ bản.
+
+Q: Tôi có thể bỏ qua Katakana để học Kanji trước không? | A: Không nên, Katakana là nền tảng cần học trước để đọc từ mượn và văn bản đơn giản. Kanji phức tạp hơn, cần học sau.
+
+Q: Cách nhận biết từ Katakana trong văn bản? | A: Từ Katakana thường là từ mượn (computer, coffee), tên nước ngoài (America), hoặc onomatopoeia (ドキドキ). Nhận diện qua hình dáng góc cạnh.
+
+Q: Hiragana có thay đổi theo thời gian không? | A: Hiragana hiện đại được chuẩn hóa từ thế kỷ 20, ít thay đổi. Một số ký tự cổ (ゐ, ゑ) không còn dùng nữa.
+
+Q: Tôi có thể học Hiragana qua âm nhạc không? | A: Có, Hikari cung cấp bài hát và video âm nhạc dạy Hiragana trong khóa N5, giúp học sinh ghi nhớ qua giai điệu.
+
+Q: Cách học Dakuten và Handakuten nhanh? | A: Học theo nhóm (か→が, さ→ざ), dùng flashcard, luyện viết từ có Dakuten/Handakuten, nghe phát âm chuẩn trên Hikari.
+
+Q: Katakana có cần thiết cho giao tiếp hàng ngày không? | A: Có, vì Katakana xuất hiện trong menu nhà hàng, tên sản phẩm, biển quảng cáo. Không biết Katakana sẽ khó giao tiếp thực tế.
 
 # === KANJI ===
 Q: Kanji là gì? | A: Kanji là chữ Hán được Nhật Bản tiếp nhận và cải biến. Mỗi chữ Kanji có nghĩa riêng, có thể có nhiều cách đọc (âm On và âm Kun).
@@ -101,6 +231,26 @@ Q: Có nên học Kanji trước khi học từ vựng? | A: Nên học song son
 
 Q: Ứng dụng nào tốt để học Kanji? | A: Anki (flashcard), Wanikani (hệ thống SRS), Kanji Study, Obenkyo. Hikari cũng có hệ thống luyện Kanji tích hợp với flashcard miễn phí.
 
+Q: Hikari có bài tập Kanji không? | A: Có, khóa Kanji Mastery và các khóa JLPT có bài tập viết, đọc, và nhận diện Kanji trong bảng Exercise.
+
+Q: Kanji N2 cần bao lâu để học? | A: Kanji N2 (1000 chữ) cần 1-2 năm nếu học 5-10 chữ/ngày, kết hợp ôn tập đều đặn và sử dụng trong ngữ cảnh.
+
+Q: Tôi có thể học Kanji qua manga không? | A: Có, manga có furigana giúp học Kanji dễ hơn. Bắt đầu với manga đơn giản như Doraemon, Yotsuba&!.
+
+Q: Cách phân biệt Kanji giống nhau? | A: Tập trung vào bộ thủ, số nét, ngữ cảnh sử dụng. Dùng flashcard so sánh (VD: 見 vs 貝), luyện viết tay để ghi nhớ.
+
+Q: Kanji có xuất hiện trong phần nghe JLPT không? | A: Không trực tiếp, nhưng từ vựng có Kanji xuất hiện trong hội thoại, cần hiểu nghĩa để trả lời câu hỏi nghe.
+
+Q: Hikari có cung cấp danh sách Kanji không? | A: Có, danh sách Kanji theo cấp độ JLPT được lưu trong bảng Document, tải miễn phí trong các khóa học.
+
+Q: Cách học Kanji qua bộ thủ hiệu quả? | A: Học 20-30 bộ thủ phổ biến trước (氵, 木, 口), tìm Kanji liên quan, tạo câu chuyện liên kết nghĩa và hình dáng.
+
+Q: Kanji N1 có bao gồm Kanji hiếm không? | A: Có, N1 có khoảng 2000+ Kanji, bao gồm một số Kanji hiếm dùng trong văn bản học thuật, báo chí, văn học.
+
+Q: Tôi có thể bỏ qua Kanji để học hội thoại không? | A: Có thể học hội thoại cơ bản, nhưng Kanji cần thiết để đọc hiểu và giao tiếp nâng cao, đặc biệt ở N3 trở lên.
+
+Q: Hikari có video hướng dẫn viết Kanji không? | A: Có, khóa Kanji Mastery có video hướng dẫn thứ tự nét và cách viết Kanji chuẩn, lưu trong bảng Lesson (mediaUrl).
+
 # === NGỮ PHÁP ===
 Q: Ngữ pháp tiếng Nhật có khó không? | A: Ngữ pháp tiếng Nhật khác tiếng Việt: trật tự SOV (chủ-tân-vị), động từ chia theo thời, thể, mức độ lịch sự. Cần thời gian làm quen nhưng có quy tắc rõ ràng.
 
@@ -122,6 +272,26 @@ Q: Cách học ngữ pháp hiệu quả? | A: Học ngữ pháp qua: ví dụ c�
 
 Q: Sách ngữ pháp nào hay? | A: Minna no Nihongo (cơ bản), Genki (sinh động), Tobira (nâng cao), Shin Kanzen Master (luyện thi), Try! (theo cấp độ JLPT).
 
+Q: Ngữ pháp N4 có bao nhiêu mẫu? | A: N4 có khoảng 200 mẫu ngữ pháp, bao gồm các cấu trúc như ながら, たり, ても, ば形, 意向形, và các mẫu điều kiện.
+
+Q: Ngữ pháp N3 khác N4 như thế nào? | A: N3 có thêm 370 mẫu, phức tạp hơn với các cấu trúc như つもりだ, らしい, ようにする, và các mẫu biểu đạt giả định, nguyên nhân.
+
+Q: Hikari có bài tập ngữ pháp không? | A: Có, bài tập ngữ pháp được lưu trong bảng Exercise, bao gồm điền từ, sửa lỗi, và tạo câu, có trong tất cả khóa học.
+
+Q: Ngữ pháp N2 có khó không? | A: Khá khó, với 200+ mẫu mới như ばかり, に比べて, つつある, cần hiểu ngữ cảnh sử dụng và sắc thái nghĩa khác nhau.
+
+Q: Ngữ pháp N1 yêu cầu gì? | A: N1 yêu cầu hiểu sâu các mẫu ngữ pháp hiếm, sắc thái tinh tế, cách dùng trong văn bản học thuật, báo chí, và văn nói trang trọng.
+
+Q: Trợ từ の dùng khi nào? | A: の có nhiều chức năng: sở hữu (私の本), giải thích (学生の山田), danh từ hóa (食べるのが好き), bổ nghĩa (赤いのが欲しい).
+
+Q: Cách phân biệt から và ので? | A: から chỉ lý do khách quan, ので lịch sự hơn, mang tính chủ quan. VD: 雨だから行かない (vì mưa nên không đi), 疲れたので休む (vì mệt nên nghỉ).
+
+Q: Hikari có video giải thích ngữ pháp không? | A: Có, mỗi bài học trong bảng Lesson có video giải thích ngữ pháp chi tiết, kèm ví dụ và bài tập thực hành.
+
+Q: Ngữ pháp つもり và 予定 khác nhau ra sao? | A: つもり là ý định cá nhân (Tôi định đi), 予定 là kế hoạch cụ thể, có sắp xếp (Tôi có lịch đi). 予定 trang trọng hơn.
+
+Q: Tôi có thể học ngữ pháp qua diễn đàn Hikari không? | A: Có, diễn đàn Hikari có chuyên mục Ngữ pháp, nơi bạn có thể đặt câu hỏi và nhận giải thích từ giảng viên và học viên khác.
+
 # === TỪ VỰNG ===
 Q: Học từ vựng tiếng Nhật như thế nào? | A: Học từ vựng qua: flashcard (Anki), đọc sách/manga, xem anime có phụ đề, nghe nhạc Nhật, học theo chủ đề, luyện tập đều đặn mỗi ngày.
 
@@ -138,6 +308,30 @@ Q: Có nên học từ vựng qua anime không? | A: Có thể học nhưng cầ
 Q: Từ đồng âm trong tiếng Nhật nhiều không? | A: Rất nhiều! VD: かみ có thể là 紙 (giấy), 髪 (tóc), 神 (thần). Cần học trong ngữ cảnh và nhớ Kanji để phân biệt.
 
 Q: Từ vựng Katakana có quan trọng không? | A: Rất quan trọng! Từ Katakana chiếm 10-15% từ vựng thường dùng: コンピューター (máy tính), レストラン (nhà hàng), アルバイト (làm thêm), v.v.
+
+Q: Từ vựng N3 gồm những chủ đề nào? | A: N3 có 3700 từ, bao gồm: thời sự, công nghệ, môi trường, giáo dục, văn hóa, sức khỏe nâng cao, và từ vựng trừu tượng hơn N4.
+
+Q: Hikari có danh sách từ vựng theo cấp độ không? | A: Có, danh sách từ vựng được lưu trong bảng Document, phân theo cấp độ JLPT, tải miễn phí trong các khóa học.
+
+Q: Cách học từ vựng qua ngữ cảnh? | A: Đọc câu văn, đoạn hội thoại, hoặc bài báo có từ mới. Tạo câu ví dụ của riêng bạn, sử dụng từ trong diễn đàn Hikari.
+
+Q: Từ vựng N2 có bao gồm từ chuyên ngành không? | A: Có, N2 có từ vựng về kinh tế, chính trị, khoa học, và văn hóa, xuất hiện trong báo chí và văn bản học thuật.
+
+Q: Tôi có thể học từ vựng qua trò chơi không? | A: Có, Hikari có trò chơi đố vui từ vựng trong khóa học, như ghép từ, đoán nghĩa, và điền từ vào câu.
+
+Q: Từ vựng N1 khác N2 như thế nào? | A: N1 có 10000+ từ, bao gồm từ hiếm, thành ngữ, từ văn học, và từ chuyên môn trong báo chí, học thuật, và văn hóa truyền thống.
+
+Q: Cách học từ Katakana hiệu quả? | A: Học qua từ mượn (coffee, television), luyện viết tay, nghe phát âm từ audio trên Hikari, nhận diện từ trong menu/quảng cáo.
+
+Q: Hikari có hỗ trợ học từ vựng theo chủ đề không? | A: Có, từ vựng được chia theo chủ đề (gia đình, công việc, du lịch) trong bảng Lesson, kèm bài tập và flashcard.
+
+Q: Từ onomatopoeia trong tiếng Nhật là gì? | A: Là từ tượng thanh/tượng hình (VD: ワンワン - tiếng chó, キラキラ - lấp lánh). Thường viết bằng Katakana, phổ biến ở N4-N3.
+
+Q: Tôi có thể ôn từ vựng qua diễn đàn Hikari không? | A: Có, diễn đàn có mục "Từ vựng" để chia sẻ danh sách từ, câu ví dụ, và mẹo ghi nhớ từ cộng đồng.
+
+Q: Cách tránh quên từ vựng đã học? | A: Ôn tập bằng SRS (Anki), dùng từ trong câu, tham gia diễn đàn Hikari, làm bài tập định kỳ trong bảng Exercise.
+
+Q: Từ vựng tiếng Nhật có thay đổi theo thời gian không? | A: Có, từ mới xuất hiện (VD: IT, mạng xã hội), từ cũ ít dùng hơn. Hikari cập nhật từ vựng mới trong tài liệu khóa học.
 
 # === KỸ NĂNG NGHE ===
 Q: Cách luyện nghe tiếng Nhật hiệu quả? | A: Nghe từ dễ đến khó: bài học cơ bản → hội thoại đơn giản → tin tức → phim/anime. Nghe nhiều lần, có phụ đề rồi tắt phụ đề, shadowing (nhắc lại).
@@ -156,6 +350,30 @@ Q: Phần nghe JLPT khó ở đâu? | A: Khó ở: tốc độ nhanh, chỉ nghe
 
 Q: Cách chuẩn bị phần nghe JLPT? | A: Luyện nghe đề thi cũ, nghe nhiều thể loại (hội thoại, thông báo, bài giảng), ghi chú nhanh, đoán nghĩa từ ngữ cảnh, luyện tập đều đặn.
 
+Q: Hikari có audio luyện nghe không? | A: Có, audio chất lượng cao được lưu trong bảng Lesson (mediaUrl), bao gồm hội thoại, tin tức, và bài giảng, có trong các khóa học.
+
+Q: Làm sao để cải thiện nghe hội thoại nhanh? | A: Nghe lặp lại nhiều lần, bắt đầu với tốc độ chậm, tăng dần tốc độ, shadowing, ghi chú từ khóa, luyện với bài nghe Hikari.
+
+Q: Nghe tiếng Nhật qua podcast có hiệu quả không? | A: Có, podcast như NHK Easy Japanese, JapanesePod101 giúp cải thiện nghe và từ vựng. Hikari cũng có podcast ngắn trong khóa học.
+
+Q: Phần nghe JLPT N5 có khó không? | A: Không quá khó, gồm hội thoại ngắn, tốc độ chậm, từ vựng cơ bản. Cần luyện nghe 100-150 giờ để đạt điểm cao.
+
+Q: Hikari có bài tập nghe không? | A: Có, bài tập nghe được lưu trong bảng Exercise, bao gồm điền từ, chọn đáp án, và trả lời câu hỏi dựa trên audio.
+
+Q: Cách phân biệt giọng nói trong phần nghe JLPT? | A: Luyện nghe nhiều giọng (nam, nữ, trẻ, già) qua audio Hikari, ghi chú đặc điểm giọng, tập trung vào từ khóa và ngữ điệu.
+
+Q: Nghe tiếng Nhật qua drama có tốt hơn anime không? | A: Có, drama có hội thoại thực tế hơn, gần với giao tiếp hàng ngày, ít từ lóng hơn anime. Phù hợp cho N3-N1.
+
+Q: Tôi có thể tải audio từ Hikari không? | A: Không, audio chỉ phát trực tuyến trong bảng Lesson để đảm bảo bản quyền. Bạn có thể nghe lại bất kỳ lúc nào.
+
+Q: Làm sao để nghe hiểu từ mới trong bài nghe? | A: Nghe lặp lại, đoán nghĩa từ ngữ cảnh, tra từ điển sau khi nghe, ghi chú từ mới, luyện lại với audio Hikari.
+
+Q: Hikari có hỗ trợ phụ đề cho bài nghe không? | A: Có, bài nghe trong bảng Lesson có tùy chọn phụ đề tiếng Nhật, tiếng Việt, hoặc tiếng Anh, có thể bật/tắt.
+
+Q: Nghe tiếng Nhật qua radio có hiệu quả không? | A: Có, nhưng khó với người mới vì tốc độ nhanh, không có phụ đề. Phù hợp N2-N1, bắt đầu với NHK Radio Easy.
+
+Q: Cách luyện nghe để thi JLPT N1? | A: Nghe tin tức (NHK), bài giảng học thuật, talk show, luyện đề thi cũ, shadowing câu dài, phân tích lỗi sai qua Hikari.
+
 # === KỸ NĂNG ĐỌC ===
 Q: Cách luyện đọc tiếng Nhật? | A: Bắt đầu từ văn bản đơn giản: truyện tranh, tin tức dễ, blog cá nhân. Dần chuyển sang: tiểu thuyết, báo chí, tài liệu chuyên môn. Đọc nhiều, tra từ điển khi cần.
 
@@ -173,6 +391,30 @@ Q: Cách đọc nhanh tiếng Nhật? | A: Không đọc từng chữ mà đọc
 
 Q: Đọc hiểu JLPT cần lưu ý gì? | A: Đọc câu hỏi trước, xác định thông tin cần tìm, đọc lướt để nắm ý chính, đọc kỹ phần liên quan đến câu hỏi, quản lý thời gian tốt.
 
+Q: Hikari có bài tập đọc hiểu không? | A: Có, bài tập đọc hiểu được lưu trong bảng Exercise, bao gồm đoạn văn ngắn, dài, và câu hỏi trắc nghiệm, có trong các khóa học.
+
+Q: Đọc hiểu N5 có nội dung gì? | A: N5 có đoạn văn ngắn (100-200 từ), câu hỏi về ý chính, chi tiết đơn giản, từ vựng và Kanji cơ bản.
+
+Q: Đọc hiểu N3 khác N4 như thế nào? | A: N3 có đoạn văn dài hơn (300-500 từ), yêu cầu hiểu ý chính, chi tiết, và sắc thái. Kanji và từ vựng phức tạp hơn.
+
+Q: Tôi có thể đọc tin tức trên Hikari không? | A: Có, Hikari cung cấp tin tức đơn giản hóa (tương tự NHK Easy News) trong bảng Document, phù hợp cho N4-N3.
+
+Q: Cách cải thiện tốc độ đọc tiếng Nhật? | A: Luyện đọc đều đặn, dùng timer để kiểm tra tốc độ, đọc văn bản có furigana, tăng dần độ khó, luyện với bài đọc trên Hikari.
+
+Q: Đọc tiểu thuyết tiếng Nhật có khó không? | A: Khó với người mới vì nhiều Kanji, ngữ pháp phức tạp. Phù hợp N2-N1. Bắt đầu với light novel có furigana.
+
+Q: Hikari có tài liệu đọc hiểu không? | A: Có, tài liệu đọc hiểu (PDF) được lưu trong bảng Document, bao gồm đoạn văn, bài báo, và câu hỏi thực hành.
+
+Q: Đọc hiểu JLPT N1 có gì đặc biệt? | A: N1 có văn bản dài (800-1000 từ), chủ đề học thuật, yêu cầu hiểu sâu sắc thái, liên kết ý, và trả lời câu hỏi phức tạp.
+
+Q: Tôi có thể luyện đọc qua diễn đàn Hikari không? | A: Có, diễn đàn Hikari có bài đăng bằng tiếng Nhật để luyện đọc và thảo luận, phù hợp cho N4-N2.
+
+Q: Cách đoán nghĩa từ mới khi đọc? | A: Dựa vào ngữ cảnh, bộ thủ Kanji, từ đồng nghĩa gần đó, tra từ điển sau khi đọc để xác nhận nghĩa.
+
+Q: Hikari có hỗ trợ furigana trong bài đọc không? | A: Có, bài đọc trong bảng Lesson có tùy chọn bật/tắt furigana để hỗ trợ học viên mới.
+
+Q: Đọc blog tiếng Nhật có giúp cải thiện không? | A: Có, blog có ngôn ngữ tự nhiên, gần với giao tiếp thực tế. Phù hợp N3-N2. Hikari có gợi ý blog trong tài liệu khóa học.
+
 # === KỸ NĂNG VIẾT ===
 Q: Cách luyện viết tiếng Nhật? | A: Bắt đầu viết câu đơn giản, mô tả hình ảnh, viết nhật ký, email, luận văn ngắn. Chú ý ngữ pháp, từ vựng, cách diễn đạt tự nhiên.
 
@@ -188,6 +430,32 @@ Q: Keigo trong viết có khó không? | A: Khá khó vì có nhiều dạng: �
 
 Q: Cách sửa lỗi viết tiếng Nhật? | A: Nhờ người Nhật sửa, dùng công cụ như Grammarly (tiếng Nhật), Lang-8, HelloTalk. Tự kiểm tra ngữ pháp, từ vựng, logic câu văn.
 
+Q: Hikari có bài tập viết không? | A: Có, bài tập viết trong bảng Exercise bao gồm viết câu, đoạn văn, email, và luận, được chấm điểm tự động hoặc bởi giảng viên.
+
+Q: Viết luận N2 trên Hikari như thế nào? | A: Khóa N2 có bài tập viết luận (bảng Exercise), yêu cầu viết 300-400 từ, tập trung vào cấu trúc, từ vựng, và keigo.
+
+Q: Tôi có thể nộp bài viết để giảng viên sửa không? | A: Có, bạn nộp bài qua mục "Bài tập" trong khóa học, giảng viên sẽ phản hồi trong 48 giờ (bảng Progress).
+
+Q: Cách viết nhật ký tiếng Nhật? | A: Viết ngắn gọn (3-5 câu/ngày), dùng ngữ pháp cơ bản, từ vựng hàng ngày, mô tả cảm xúc, hoạt động. Hikari có mẫu nhật ký trong tài liệu.
+
+Q: Viết tiếng Nhật trên máy tính có khó không? | A: Không khó, cài bàn phím tiếng Nhật (IME), gõ romaji để chuyển thành Hiragana/Kanji. Hikari có hướng dẫn cài bàn phím.
+
+Q: Hikari có hỗ trợ kiểm tra lỗi viết không? | A: Có, hệ thống tự động kiểm tra lỗi ngữ pháp cơ bản, và giảng viên sẽ sửa lỗi chi tiết cho bài tập nộp.
+
+Q: Viết keigo trong email cần lưu ý gì? | A: Dùng đúng dạng keigo (尊敬語 cho người nhận, 謙譲語 cho mình), tránh từ thông tục, kiểm tra kỹ trước khi gửi.
+
+Q: Tôi có thể luyện viết qua diễn đàn Hikari không? | A: Có, bạn có thể đăng bài viết tiếng Nhật trên diễn đàn để nhận phản hồi từ cộng đồng và giảng viên.
+
+Q: Cách viết câu ghép tiếng Nhật? | A: Sử dụng từ nối như そして, しかし, だから, hoặc cấu trúc て形, ながら. Luyện tập với bài tập trên Hikari.
+
+Q: Viết quảng cáo bằng tiếng Nhật có khó không? | A: Khó ở chỗ cần từ vựng thu hút, ngữ pháp ngắn gọn, và sắc thái thuyết phục. Khóa Tiếng Nhật Thương mại có bài tập viết quảng cáo.
+
+Q: Hikari có mẫu văn bản tiếng Nhật không? | A: Có, mẫu văn bản (email, luận, nhật ký) được lưu trong bảng Document, tải miễn phí trong khóa học.
+
+Q: Cách viết câu hỏi tiếng Nhật đúng? | A: Kết thúc bằng か, dùng trợ từ phù hợp (は, が), ngữ điệu lên cao ở cuối câu. Luyện với bài tập trên Hikari.
+
+Q: Viết tiếng Nhật có cần đúng thứ tự từ không? | A: Có, trật tự SOV (chủ-tân-vị) là chuẩn. Sai thứ tự có thể gây hiểu nhầm. Hikari có bài tập sửa lỗi thứ tự từ.
+
 # === HỘI THOẠI VÀ PHÁT ÂM ===
 Q: Cách luyện nói tiếng Nhật? | A: Luyện phát âm cơ bản, shadowing, đọc to, hội thoại với người Nhật, tham gia câu lạc bộ tiếng Nhật, ghi âm để tự kiểm tra.
 
@@ -201,9 +469,33 @@ Q: Ngữ điệu tiếng Nhật ra sao? | A: Tiếng Nhật có ngữ điệu ca
 
 Q: Cách bắt chuyện với người Nhật? | A: Bắt đầu với chủ đề an toàn: thời tiết, sở thích, quê hương, ẩm thực. Tránh chính trị, tôn giáo. Thể hiện sự quan tâm đến văn hóa Nhật.
 
-Q: Lỗi phát âm thường gặp? | A: Nhầm âm dài/ngắn, phát âm っ thành "tsu", ngữ điệu sai, nhầm ら và la, không phân biệt し và si. Cần luyện tập với audio chuẩn.
+Q: Lỗi phát âm thường gặp? | A: Nhầm âm dài/ngắn, phát âm っ thành "tsu", ngữ điệu sai, nhầm ら và la, し và si. Cần luyện tập với audio chuẩn.
 
 Q: Ứng dụng nào tốt để luyện nói? | A: HelloTalk (chat với người Nhật), Tandem, Speaky, Forvo (nghe phát âm chuẩn), Google Translate (có tính năng nói), Speechling.
+
+Q: Hikari có bài tập luyện nói không? | A: Có, khóa Hội thoại Thực tế có bài tập shadowing, ghi âm hội thoại, và phản hồi từ giảng viên trong bảng Exercise.
+
+Q: Cách luyện phát âm ん đúng? | A: Âm ん không cố định, phụ thuộc vào âm sau: /n/ (trước t, d), /m/ (trước p, b), /ŋ/ (trước k, g). Nghe audio Hikari để luyện.
+
+Q: Tôi có thể luyện nói qua video call với giảng viên không? | A: Một số khóa học (N3-N1) có phiên tư vấn qua video call, đặt lịch trong mục "Tư vấn" của Hikari.
+
+Q: Ngữ điệu câu hỏi tiếng Nhật thế nào? | A: Câu hỏi thường có ngữ điệu lên cao ở cuối (VD: 行く？). Luyện với audio câu hỏi trong bảng Lesson.
+
+Q: Cách cải thiện phản xạ hội thoại? | A: Luyện shadowing, tham gia diễn đàn Hikari, nói chuyện với người Nhật qua app, làm bài tập hội thoại trong khóa học.
+
+Q: Hikari có hỗ trợ sửa phát âm không? | A: Có, bạn có thể gửi file ghi âm qua mục "Bài tập", giảng viên sẽ phản hồi trong 48 giờ (bảng Progress).
+
+Q: Phát âm tiếng Nhật Kansai-ben có khác không? | A: Có, Kansai-ben có ngữ điệu sôi nổi, từ vựng riêng (VD: ありがとう → おおきに). Hikari có bài giảng về phương ngữ trong khóa Văn hóa.
+
+Q: Cách luyện nói keigo trong giao tiếp? | A: Học 3 loại keigo, luyện câu mẫu, shadowing hội thoại công sở, thực hành qua bài tập trong khóa Tiếng Nhật Thương mại.
+
+Q: Tôi có thể luyện nói qua diễn đàn Hikari không? | A: Có, diễn đàn có mục "Hội thoại" để luyện nói qua văn bản hoặc gửi file ghi âm để nhận phản hồi.
+
+Q: Phát âm từ mượn (Katakana) có khó không? | A: Không khó, nhưng cần chú ý cách Nhật hóa âm (VD: coffee → コーヒー). Luyện với audio Katakana trên Hikari.
+
+Q: Làm sao để nói tiếng Nhật tự nhiên hơn? | A: Nghe người Nhật nói, bắt chước ngữ điệu, dùng cụm từ thông dụng, tránh dịch word-by-word, luyện với bài hội thoại Hikari.
+
+Q: Hikari có video hội thoại thực tế không? | A: Có, video hội thoại (nhà hàng, phỏng vấn, mua sắm) được lưu trong bảng Lesson, kèm phụ đề và bài tập thực hành.
 
 # === VĂN HÓA NHẬT BẢN ===
 Q: Văn hóa cúi chào Nhật Bản như thế nào? | A: Cúi chào (お辞儀) thể hiện lịch sự, tôn trọng. Có 3 mức: nhẹ (15°), trung bình (30°), sâu (45°). Mức độ tùy thuộc tình huống và đối tượng.
@@ -222,6 +514,30 @@ Q: Tại sao người Nhật đeo khẩu trang? | A: Không chỉ vì bệnh t�
 
 Q: Nemawashi là gì? | A: Nemawashi (根回し) là quá trình thảo luận, thuyết phục trước cuộc họp chính thức. Giúp đảm bảo cuộc họp diễn ra suôn sẻ, tránh bất ngờ.
 
+Q: Văn hóa tặng quà ở Nhật như thế nào? | A: Quà tặng (お土産, お中元, お歳暮) thể hiện sự tôn trọng. Gói đẹp, trao bằng 2 tay, không mở trước mặt người tặng, giá trị vừa phải.
+
+Q: Hikari có bài giảng về văn hóa Nhật không? | A: Có, khóa Văn hóa Nhật Bản có bài giảng về lễ hội, ẩm thực, phong tục, và đời sống, lưu trong bảng Lesson.
+
+Q: Văn hóa làm việc nhóm ở Nhật ra sao? | A: Ưu tiên tập thể, đồng thuận, chia sẻ trách nhiệm, báo cáo thường xuyên. Hikari có bài giảng về văn hóa công sở trong khóa Tiếng Nhật Thương mại.
+
+Q: Người Nhật có hay nói "không" trực tiếp không? | A: Không, người Nhật thường nói gián tiếp (VD: 難しいですね) để tránh làm mất lòng. Hiểu sắc thái này quan trọng khi giao tiếp.
+
+Q: Văn hóa xếp hàng ở Nhật như thế nào? | A: Rất trật tự, đặc biệt ở ga tàu, cửa hàng. Không chen lấn, giữ khoảng cách, tôn trọng thứ tự. Hikari có video về văn hóa này.
+
+Q: Tại sao người Nhật thích sự tối giản? | A: Tối giản (侘び寂び - wabi-sabi) thể hiện vẻ đẹp trong sự không hoàn hảo, ảnh hưởng từ Thiền tông, trà đạo, và kiến trúc truyền thống.
+
+Q: Văn hóa xin lỗi ở Nhật quan trọng không? | A: Rất quan trọng! Người Nhật xin lỗi (すみません, 申し訳ありません) để thể hiện sự tôn trọng, trách nhiệm, ngay cả khi lỗi nhỏ.
+
+Q: Hikari có dạy về trà đạo Nhật Bản không? | A: Có, khóa Văn hóa Nhật Bản có bài giảng về trà đạo (茶道), quy tắc, ý nghĩa, và cách thực hành cơ bản.
+
+Q: Văn hóa mặc kimono như thế nào? | A: Kimono mặc trong dịp đặc biệt (lễ hội, cưới hỏi), có cách mặc phức tạp, vạt trái đè vạt phải, đi kèm obi (đai lưng).
+
+Q: Tinh thần samurai ảnh hưởng thế nào đến văn hóa Nhật? | A: Thể hiện lòng trung thành, danh dự, kỷ luật. Ảnh hưởng đến văn hóa công sở, võ thuật, và tư duy trách nhiệm.
+
+Q: Hikari có bài giảng về lịch sử Nhật Bản không? | A: Có, khóa Văn hóa Nhật Bản có bài giảng về lịch sử cổ đại, thời samurai, và Nhật Bản hiện đại, lưu trong bảng Lesson.
+
+Q: Văn hóa đọc sách ở Nhật như thế nào? | A: Người Nhật đọc nhiều, đặc biệt trên tàu điện. Manga, tiểu thuyết, sách self-help phổ biến. Thư viện công cộng rất phát triển.
+
 # === CUỘC SỐNG TẠI NHẬT ===
 Q: Chi phí sống ở Nhật như thế nào? | A: Khá cao. Tokyo: 150-200k yen/tháng (nhà trọ, ăn uống, giao thông). Vùng khác rẻ hơn 20-30%. Du học sinh cần 100-150k yen/tháng.
 
@@ -239,6 +555,30 @@ Q: Visa du học Nhật cần gì? | A: Bằng tốt nghiệp, chứng minh tài
 
 Q: Tìm việc ở Nhật sau tốt nghiệp? | A: Cần N2+ cho hầu hết công việc, N1 cho công việc tốt. Tham gia job fair, nộp đơn online, networking. Visa làm việc cần sponsor từ công ty.
 
+Q: Hikari có bài giảng về cuộc sống ở Nhật không? | A: Có, khóa Văn hóa Nhật Bản có bài giảng về sinh hoạt, giao thông, nhà ở, và làm việc tại Nhật, lưu trong bảng Lesson.
+
+Q: Thuê nhà ở Nhật cần lưu ý gì? | A: Kiểm tra hợp đồng, phí môi giới (1-2 tháng tiền nhà), tiền cọc (1-2 tháng), cần người bảo lãnh, ưu tiên nhà gần ga tàu.
+
+Q: Làm sao để thích nghi với thời tiết Nhật Bản? | A: Mùa đông lạnh (mua áo ấm, máy sưởi), mùa hè nóng ẩm (dùng quạt, điều hòa). Hikari có bài giảng về thời tiết trong khóa Văn hóa.
+
+Q: Hệ thống y tế ở Nhật như thế nào? | A: Rất tốt, bảo hiểm y tế quốc dân (70% chi phí được chi trả). Du học sinh cần tham gia bảo hiểm ngay khi đến Nhật.
+
+Q: Mua sắm ở Nhật có tiện lợi không? | A: Rất tiện, có konbini (24/7), siêu thị (AEON, Ito-Yokado), cửa hàng 100 yen (Daiso). Giá cả hợp lý, chất lượng cao.
+
+Q: Hikari có hướng dẫn làm thêm ở Nhật không? | A: Có, khóa Tiếng Nhật Thương mại có bài giảng về tìm việc làm thêm, quy tắc công sở, và phỏng vấn part-time.
+
+Q: Văn hóa đi tàu điện ở Nhật ra sao? | A: Đúng giờ, giữ trật tự, nhường ghế cho người già, không nói điện thoại, xếp hàng trước khi lên tàu.
+
+Q: Cuộc sống ở vùng quê Nhật Bản có khác không? | A: Rẻ hơn, yên tĩnh, ít tiện nghi hơn thành phố, cộng đồng gắn bó. Phù hợp với người thích thiên nhiên, học văn hóa truyền thống.
+
+Q: Hikari có dạy về kỹ năng sống ở Nhật không? | A: Có, khóa Văn hóa Nhật Bản có bài giảng về quản lý tài chính, giao thông, và giao tiếp xã hội ở Nhật.
+
+Q: Du học sinh có thể thuê share house không? | A: Có, share house phổ biến, giá rẻ, dễ kết bạn. Cần kiểm tra quy tắc nhà (giờ giấc, dọn dẹp) trước khi thuê.
+
+Q: Làm sao để hòa nhập với người Nhật? | A: Học tiếng Nhật tốt, tôn trọng văn hóa, tham gia sự kiện địa phương, lịch sự, đúng giờ, thể hiện sự quan tâm.
+
+Q: Hikari có hỗ trợ chuẩn bị hồ sơ du học không? | A: Hiện tại Hikari cung cấp hướng dẫn cơ bản về visa và hồ sơ trong khóa Văn hóa Nhật Bản, nhưng không hỗ trợ nộp hồ sơ trực tiếp.
+
 # === ANIME VÀ MANGA ===
 Q: Học tiếng Nhật qua anime có hiệu quả không? | A: Có thể hỗ trợ nhưng không nên dựa hoàn toàn. Anime có từ lóng, cách nói cường điệu, không phản ánh ngôn ngữ thực tế. Nên kết hợp với tài liệu học thuật.
 
@@ -252,6 +592,34 @@ Q: Light novel có khó đọc không? | A: Khó hơn manga vì ít hình ảnh,
 
 Q: Seiyuu (lồng tiếng) nói có chuẩn không? | A: Seiyuu chuyên nghiệp nói khá chuẩn nhưng vẫn có yếu tố diễn xuất. Tốt hơn nên nghe tin tức, phỏng vấn, drama để học phát âm tự nhiên.
 
+Q: Hikari có bài giảng về anime/manga không? | A: Có, khóa Văn hóa Nhật Bản có bài giảng về anime, manga, và văn hóa otaku, lưu trong bảng Lesson.
+
+Q: Manga nào dễ đọc cho người mới học? | A: Yotsuba&!, Chi’s Sweet Home, Doraemon. Có furigana, từ vựng đơn giản, phù hợp N5-N4.
+
+Q: Anime có phụ đề tiếng Nhật trên Hikari không? | A: Có, một số video anime ngắn trong khóa Văn hóa Nhật Bản có phụ đề tiếng Nhật để hỗ trợ học tập.
+
+Q: Học tiếng Nhật qua game có hiệu quả không? | A: Có, game như Pokémon, Animal Crossing có từ vựng và hội thoại đơn giản, phù hợp N4-N3. Hikari có bài tập dựa trên game.
+
+Q: Văn hóa cosplay ở Nhật như thế nào? | A: Cosplay rất phổ biến, đặc biệt ở Akihabara, Comic Market. Thể hiện đam mê anime/manga, cần đầu tư trang phục và kỹ năng hóa trang.
+
+Q: Hikari có tài liệu về từ vựng anime/manga không? | A: Có, tài liệu từ vựng anime/manga được lưu trong bảng Document, tải miễn phí trong khóa Văn hóa Nhật Bản.
+
+Q: Anime có giúp luyện nghe JLPT không? | A: Ít hiệu quả vì từ vựng và ngữ pháp không chuẩn JLPT. Tốt hơn nên dùng audio thi thử trên Hikari.
+
+Q: Manga có xuất hiện trong JLPT không? | A: Không trực tiếp, nhưng từ vựng và ngữ pháp trong manga có thể xuất hiện ở N4-N3. Hikari có bài tập đọc manga.
+
+Q: Tôi có thể học keigo qua anime không? | A: Khó, vì anime hiếm dùng keigo chuẩn. Khóa Tiếng Nhật Thương mại trên Hikari có bài giảng keigo thực tế hơn.
+
+Q: Văn hóa maid cafe ở Nhật ra sao? | A: Maid cafe là quán cà phê với nhân viên mặc trang phục hầu gái, phục vụ theo phong cách anime, phổ biến ở Akihabara, phục vụ khách otaku.
+
+Q: Hikari có dạy về ngôn ngữ trong anime không? | A: Có, khóa Văn hóa Nhật Bản phân tích từ lóng, cách nói đặc trưng trong anime, so sánh với ngôn ngữ thực tế.
+
+Q: Anime có giúp hiểu văn hóa Nhật không? | A: Có, nhưng chỉ một phần (lễ hội, phong tục). Nhiều yếu tố cường điệu, cần học thêm qua khóa Văn hóa Nhật Bản.
+
+Q: Light novel có furigana không? | A: Một số có, đặc biệt light novel cho thiếu niên. Phù hợp N3-N2. Hikari có gợi ý light novel trong tài liệu.
+
+Q: Tôi có thể thảo luận về anime trên diễn đàn Hikari không? | A: Có, diễn đàn có mục "Văn hóa" để thảo luận về anime, manga, và otaku culture với cộng đồng.
+
 # === JLPT TIPS VÀ TRICKS ===
 Q: Chiến lược làm bài thi JLPT? | A: Đọc hướng dẫn kỹ, làm phần dễ trước, quản lý thời gian, không để trống câu nào, kiểm tra lại đáp án, giữ bình tĩnh.
 
@@ -261,13 +629,7 @@ Q: Cách phân bổ thời gian thi JLPT? | A: N5: Ngữ pháp/Từ vựng (25 p
 
 Q: Điểm chuẩn JLPT là bao nhiêu? | A: N5-N4: 90/180 điểm (50%). N3-N1: 95/180 điểm (~53%). Mỗi phần phải đạt tối thiểu 38/60 điểm. Không được 0 điểm phần nào.
 
-Q: Nên đăng ký thi cấp độ nào? | A: Đăng ký cấp độ phù hợp với năng lực. Thi thử trước để đánh giá. Không nên nhảy cấp quá nhiều. Thà chắc chắn đỗ hơn là mạo hiểm.
-
-Q: Tài liệu luyện thi JLPT nào tốt? | A: Shin Kanzen Master (toàn diện), Try! (theo cấp độ), Sou Matome (tóm tắt), đề thi cũ chính thức, Nihongo Challenge, U-CAN.
-
-Q: Có nên học nhiều cấp độ cùng lúc không? | A: Không nên. Tập trung vào 1 cấp độ, học kỹ, thi đỗ rồi chuyển cấp tiếp theo. Học nhiều cấp dễ bị lẫn lộn, không sâu.
-
-Q: Sau khi thi JLPT bao lâu có kết quả? | A: Khoảng 2 tháng. Kết quả online trước, giấy chứng nhận gửi sau. Có thể xin cấp lại nếu mất giấy chứng nhận.
+Q: Nên đăng ký thi cấp độ nào? | A: Đăng ký cấp
 
 # === CÔNG VIỆC VÀ TIẾNG NHẬT ===
 Q: Trình độ tiếng Nhật nào cần để làm việc? | A: Tùy công việc. Phiên dịch: N1, Kỹ sư IT: N2-N3, Giáo viên tiếng Anh: N3-N4, Công việc phục vụ: N4-N5. Càng cao càng nhiều cơ hội.
